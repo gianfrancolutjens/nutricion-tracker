@@ -64,17 +64,17 @@
       <canvas id="chartKcal"></canvas>
     </div>
     <div class="panel prot">
-      <h2>Proteínas (g)</h2>
+      <h2>Proteínas (g) · objetivo 150g</h2>
       <div class="last" id="last-prot">–</div>
       <canvas id="chartProt"></canvas>
     </div>
     <div class="panel carb">
-      <h2>Carbohidratos (g)</h2>
+      <h2>Carbohidratos (g) · objetivo 155g</h2>
       <div class="last" id="last-carb">–</div>
       <canvas id="chartCarb"></canvas>
     </div>
     <div class="panel sugar">
-      <h2>Azúcares (g)</h2>
+      <h2>Azúcares (g) · tope 40g</h2>
       <div class="last" id="last-sugar">–</div>
       <canvas id="chartSugar"></canvas>
     </div>
@@ -121,6 +121,10 @@ const DAILY_LOG = [
   }
 ];
 const METABOLISMO_BASAL = 1600;
+const OBJETIVO_KCAL = 1760;
+const OBJETIVO_PROTEINA = 150;
+const OBJETIVO_CARBOHIDRATOS = 155;
+const OBJETIVO_AZUCAR = 40;
 // ==== FIN DATOS ====
 
 document.getElementById('generado').textContent =
@@ -136,19 +140,19 @@ function fmtFecha(f){
 const gridColor = '#262b36';
 const tickColor = '#8b93a3';
 
-function baseLineChart(canvasId, labels, data, color, extraDataset){
+function baseLineChart(canvasId, labels, data, color, extraDatasets){
   const datasets = [{
     label: '', data, borderColor: color,
     backgroundColor: color + '22', fill: true, tension: 0.3,
     pointRadius: 3, pointBackgroundColor: color
   }];
-  if (extraDataset) datasets.push(extraDataset);
+  if (extraDatasets) datasets.push(...extraDatasets);
   return new Chart(document.getElementById(canvasId), {
     type: 'line',
     data: { labels, datasets },
     options: {
       responsive: true,
-      plugins: { legend: { display: !!extraDataset, labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } } },
+      plugins: { legend: { display: !!extraDatasets, labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } } },
       scales: {
         x: { ticks: { color: tickColor }, grid: { color: gridColor } },
         y: { ticks: { color: tickColor }, grid: { color: gridColor }, beginAtZero: true }
@@ -175,14 +179,24 @@ if (sorted.length === 0){
   const carb = sorted.map(d => d.totales.carbohidratos_g);
   const sugar = sorted.map(d => d.totales.azucares_g);
 
-  baseLineChart('chartKcal', labels, kcal, '#f2994a', {
-    label: 'Metabolismo basal (1600)',
-    data: labels.map(() => METABOLISMO_BASAL),
-    borderColor: '#4f5666', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0
-  });
-  baseLineChart('chartProt', labels, prot, '#56ccf2');
-  baseLineChart('chartCarb', labels, carb, '#bb6bd9');
-  baseLineChart('chartSugar', labels, sugar, '#eb5757');
+  baseLineChart('chartKcal', labels, kcal, '#f2994a', [
+    { label: 'Metabolismo basal (1600)', data: labels.map(() => METABOLISMO_BASAL),
+      borderColor: '#4f5666', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 },
+    { label: 'Objetivo (1760)', data: labels.map(() => OBJETIVO_KCAL),
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+  baseLineChart('chartProt', labels, prot, '#56ccf2', [
+    { label: 'Objetivo (150g)', data: labels.map(() => OBJETIVO_PROTEINA),
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+  baseLineChart('chartCarb', labels, carb, '#bb6bd9', [
+    { label: 'Objetivo (155g)', data: labels.map(() => OBJETIVO_CARBOHIDRATOS),
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+  baseLineChart('chartSugar', labels, sugar, '#eb5757', [
+    { label: 'Tope (40g)', data: labels.map(() => OBJETIVO_AZUCAR),
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
 
   const tbody = document.getElementById('tabla-body');
   [...sorted].reverse().forEach(d => {
