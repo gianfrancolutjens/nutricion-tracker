@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrición Tracker · Gianfranco</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel-border:#262b36;
+    --text:#e8eaed; --muted:#8b93a3;
+    --kcal:#f2994a; --prot:#56ccf2; --carb:#bb6bd9; --fat:#eb5757;
+    --accent:#27ae60;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    padding:32px 20px 60px;
+  }
+  .wrap{max-width:960px; margin:0 auto;}
+  header{margin-bottom:28px;}
+  h1{font-size:22px; margin:0 0 4px;}
+  .sub{color:var(--muted); font-size:13px;}
+  .cards{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:12px; margin:24px 0;
+  }
+  .card{
+    background:var(--panel); border:1px solid var(--panel-border);
+    border-radius:10px; padding:16px;
+  }
+  .card .label{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em;}
+  .card .value{font-size:26px; font-weight:600; margin-top:6px;}
+  .card.kcal .value{color:var(--kcal);}
+  .card.prot .value{color:var(--prot);}
+  .card.carb .value{color:var(--carb);}
+  .card.fat .value{color:var(--fat);}
+  .panel{
+    background:var(--panel); border:1px solid var(--panel-border);
+    border-radius:10px; padding:20px; margin-bottom:20px;
+  }
+  .panel h2{font-size:14px; margin:0 0 16px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em;}
+  table{width:100%; border-collapse:collapse; font-size:13px;}
+  th,td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--panel-border);}
+  th{color:var(--muted); font-weight:500; font-size:12px;}
+  td.items{color:var(--muted); font-size:12px; max-width:320px;}
+  .empty{color:var(--muted); font-size:14px; padding:24px 0; text-align:center;}
+  canvas{max-height:320px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🥗 Nutrición Diaria</h1>
+    <div class="sub" id="generado">Generado: —</div>
+  </header>
+
+  <div class="cards">
+    <div class="card kcal"><div class="label">Kcal (últ. día)</div><div class="value" id="c-kcal">–</div></div>
+    <div class="card prot"><div class="label">Proteína (g)</div><div class="value" id="c-prot">–</div></div>
+    <div class="card carb"><div class="label">Carbohidratos (g)</div><div class="value" id="c-carb">–</div></div>
+    <div class="card fat"><div class="label">Grasa (g)</div><div class="value" id="c-fat">–</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Calorías por día</h2>
+    <canvas id="chartKcal"></canvas>
+    <div class="empty" id="empty-kcal" style="display:none;">Sin datos todavía. En cuanto reportes tu primer día, aparece acá.</div>
+  </div>
+
+  <div class="panel">
+    <h2>Macronutrientes por día (g)</h2>
+    <canvas id="chartMacros"></canvas>
+    <div class="empty" id="empty-macros" style="display:none;">Sin datos todavía.</div>
+  </div>
+
+  <div class="panel">
+    <h2>Registro</h2>
+    <table id="tabla">
+      <thead>
+        <tr><th>Fecha</th><th>Kcal</th><th>Prot (g)</th><th>Carb (g)</th><th>Grasa (g)</th><th>Detalle</th></tr>
+      </thead>
+      <tbody id="tabla-body"></tbody>
+    </table>
+    <div class="empty" id="empty-tabla" style="display:none;">Aún no hay entradas registradas.</div>
+  </div>
+</div>
+
+<script>
+// ==== DATOS (bloque actualizado por Claude en cada publicación) ====
+const DAILY_LOG = [];
+// ==== FIN DATOS ====
+
+document.getElementById('generado').textContent =
+  'Generado: ' + new Date().toLocaleDateString('es-CL', {day:'numeric', month:'long', year:'numeric'});
+
+const sorted = [...DAILY_LOG].sort((a,b) => a.fecha.localeCompare(b.fecha));
+
+function fmtFecha(f){
+  const d = new Date(f + 'T00:00:00');
+  return d.toLocaleDateString('es-CL', {day:'2-digit', month:'2-digit'});
+}
+
+if (sorted.length === 0){
+  document.getElementById('empty-kcal').style.display = 'block';
+  document.getElementById('empty-macros').style.display = 'block';
+  document.getElementById('empty-tabla').style.display = 'block';
+} else {
+  const last = sorted[sorted.length - 1];
+  document.getElementById('c-kcal').textContent = last.totales.kcal;
+  document.getElementById('c-prot').textContent = last.totales.proteina_g;
+  document.getElementById('c-carb').textContent = last.totales.carbohidratos_g;
+  document.getElementById('c-fat').textContent = last.totales.grasa_g;
+
+  const labels = sorted.map(d => fmtFecha(d.fecha));
+  const kcal = sorted.map(d => d.totales.kcal);
+  const prot = sorted.map(d => d.totales.proteina_g);
+  const carb = sorted.map(d => d.totales.carbohidratos_g);
+  const fat  = sorted.map(d => d.totales.grasa_g);
+
+  new Chart(document.getElementById('chartKcal'), {
+    type: 'line',
+    data: { labels, datasets: [{
+      label: 'Kcal', data: kcal, borderColor: '#f2994a',
+      backgroundColor: 'rgba(242,153,74,0.12)', fill: true, tension: 0.3, pointRadius: 3
+    }]},
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: '#8b93a3' }, grid: { color: '#262b36' } },
+        y: { ticks: { color: '#8b93a3' }, grid: { color: '#262b36' } }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('chartMacros'), {
+    type: 'bar',
+    data: { labels, datasets: [
+      { label: 'Proteína', data: prot, backgroundColor: '#56ccf2' },
+      { label: 'Carbohidratos', data: carb, backgroundColor: '#bb6bd9' },
+      { label: 'Grasa', data: fat, backgroundColor: '#eb5757' }
+    ]},
+    options: {
+      responsive: true,
+      plugins: { legend: { labels: { color: '#e8eaed' } } },
+      scales: {
+        x: { stacked: false, ticks: { color: '#8b93a3' }, grid: { display: false } },
+        y: { ticks: { color: '#8b93a3' }, grid: { color: '#262b36' } }
+      }
+    }
+  });
+
+  const tbody = document.getElementById('tabla-body');
+  [...sorted].reverse().forEach(d => {
+    const tr = document.createElement('tr');
+    const itemsStr = (d.items || []).map(i => i.nombre).join(', ');
+    tr.innerHTML = `<td>${d.fecha}</td><td>${d.totales.kcal}</td><td>${d.totales.proteina_g}</td><td>${d.totales.carbohidratos_g}</td><td>${d.totales.grasa_g}</td><td class="items">${itemsStr}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+</script>
+</body>
+</html>
