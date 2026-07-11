@@ -159,12 +159,12 @@
     },
     {
       "id": "trutro_entero_horno_cebolla_ajo_papa",
-      "nombre": "Trutro entero (corto+largo) al horno con cebolla, ajo y papa al horno",
-      "porcion": "~220g trutro con piel + 180g papa + cebolla/ajo",
-      "kcal": 663,
-      "proteina_g": 48.5,
+      "nombre": "Trutro entero (corto+largo) al horno SIN piel, con cebolla, ajo y papa al horno",
+      "porcion": "~220g trutro sin piel + 180g papa + cebolla/ajo",
+      "kcal": 573,
+      "proteina_g": 59.5,
       "carbohidratos_g": 43,
-      "grasa_g": 33,
+      "grasa_g": 16.7,
       "azucares_g": 3.9,
       "confianza": "estimado",
       "origen": "busqueda_web"
