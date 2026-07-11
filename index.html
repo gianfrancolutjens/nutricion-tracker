@@ -123,7 +123,7 @@ const DAILY_LOG = [
     "actividad": {"detalle": [{"actividad": "Elíptica", "duracion_min": 40, "intensidad": "moderada", "kcal_quemadas": 250}], "kcal_quemadas_total": 250}
   }
 ];
-const METABOLISMO_BASAL = 1600;
+const METABOLISMO_BASAL = 1625;
 const OBJETIVO_KCAL = 1760;
 const OBJETIVO_PROTEINA = 150;
 const OBJETIVO_CARBOHIDRATOS = 155;
@@ -194,7 +194,7 @@ if (sorted.length === 0){
       { type: 'line', label: 'Consumidas', data: kcal, borderColor: '#f2994a',
         backgroundColor: '#f2994a', fill: false, tension: 0.3, pointRadius: 3,
         pointBackgroundColor: '#f2994a', order: 0 },
-      { type: 'line', label: 'Basal (1600)', data: labels.map(() => METABOLISMO_BASAL),
+      { type: 'line', label: 'Basal (1625)', data: labels.map(() => METABOLISMO_BASAL),
         borderColor: '#4f5666', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0, order: 1 },
       { type: 'line', label: 'Objetivo (1760)', data: labels.map(() => OBJETIVO_KCAL),
         borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0, order: 2 }
