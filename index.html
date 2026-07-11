@@ -59,7 +59,7 @@
 
   <div class="grid">
     <div class="panel kcal">
-      <h2>Calorías (kcal) · línea base 1600 = metabolismo basal</h2>
+      <h2>Calorías (kcal) · línea = consumo, barras = quemadas por actividad</h2>
       <div class="last" id="last-kcal">–</div>
       <canvas id="chartKcal"></canvas>
     </div>
@@ -178,13 +178,30 @@ if (sorted.length === 0){
   const prot = sorted.map(d => d.totales.proteina_g);
   const carb = sorted.map(d => d.totales.carbohidratos_g);
   const sugar = sorted.map(d => d.totales.azucares_g);
+  const quemadas = sorted.map(d => (d.actividad && d.actividad.kcal_quemadas_total) || 0);
 
-  baseLineChart('chartKcal', labels, kcal, '#f2994a', [
-    { label: 'Metabolismo basal (1600)', data: labels.map(() => METABOLISMO_BASAL),
-      borderColor: '#4f5666', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 },
-    { label: 'Objetivo (1760)', data: labels.map(() => OBJETIVO_KCAL),
-      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
-  ]);
+  new Chart(document.getElementById('chartKcal'), {
+    type: 'bar',
+    data: { labels, datasets: [
+      { type: 'bar', label: 'Quemadas (actividad)', data: quemadas,
+        backgroundColor: '#2d9cdb55', borderColor: '#2d9cdb', borderWidth: 1, order: 3 },
+      { type: 'line', label: 'Consumidas', data: kcal, borderColor: '#f2994a',
+        backgroundColor: '#f2994a22', fill: true, tension: 0.3, pointRadius: 3,
+        pointBackgroundColor: '#f2994a', order: 0 },
+      { type: 'line', label: 'Metabolismo basal (1600)', data: labels.map(() => METABOLISMO_BASAL),
+        borderColor: '#4f5666', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0, order: 1 },
+      { type: 'line', label: 'Objetivo (1760)', data: labels.map(() => OBJETIVO_KCAL),
+        borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0, order: 2 }
+    ]},
+    options: {
+      responsive: true,
+      plugins: { legend: { labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } } },
+      scales: {
+        x: { ticks: { color: tickColor }, grid: { color: gridColor } },
+        y: { ticks: { color: tickColor }, grid: { color: gridColor }, beginAtZero: true }
+      }
+    }
+  });
   baseLineChart('chartProt', labels, prot, '#56ccf2', [
     { label: 'Objetivo (150g)', data: labels.map(() => OBJETIVO_PROTEINA),
       borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
