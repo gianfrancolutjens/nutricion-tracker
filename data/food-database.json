@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "alimentos": [
+    {
+      "id": "scoop_proteina_gold_standard",
+      "nombre": "Scoop proteína Gold Standard Whey (chocolate)",
+      "porcion": "30.4g (1 scoop)",
+      "kcal": 120,
+      "proteina_g": 24,
+      "carbohidratos_g": 3,
+      "grasa_g": 1.5,
+      "confianza": "alta"
+    },
+    {
+      "id": "barra_proteica",
+      "nombre": "Barra proteica sabor chocolate",
+      "porcion": "60g (1 unidad)",
+      "kcal": 212,
+      "proteina_g": 20.6,
+      "carbohidratos_g": 11.4,
+      "grasa_g": 8.1,
+      "confianza": "media"
+    },
+    {
+      "id": "jalea_proteica_watts",
+      "nombre": "Jalea proteica Watts",
+      "porcion": "100g (1 unidad)",
+      "kcal": 42,
+      "proteina_g": 10,
+      "carbohidratos_g": 0.5,
+      "grasa_g": 0,
+      "confianza": "alta"
+    },
+    {
+      "id": "yogurt_protein_loncoleche",
+      "nombre": "Yogurt Protein Loncoleche",
+      "porcion": "140g (1 envase)",
+      "kcal": 91,
+      "proteina_g": 12,
+      "carbohidratos_g": 8.3,
+      "grasa_g": 0.6,
+      "confianza": "media"
+    },
+    {
+      "id": "yogurt_protein_soprole",
+      "nombre": "Yogurt Protein+ Soprole",
+      "porcion": "155g (1 unidad)",
+      "kcal": 105,
+      "proteina_g": 10.2,
+      "carbohidratos_g": 9.8,
+      "grasa_g": 2.8,
+      "confianza": "alta"
+    },
+    {
+      "id": "yogurt_blanco_danone",
+      "nombre": "Yogurt blanco Danone",
+      "porcion": "150g (1 envase)",
+      "kcal": 147,
+      "proteina_g": 6.9,
+      "carbohidratos_g": 9.8,
+      "grasa_g": 9,
+      "confianza": "alta"
+    }
+  ]
+}
