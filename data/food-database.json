@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -9,6 +9,7 @@
       "proteina_g": 24,
       "carbohidratos_g": 3,
       "grasa_g": 1.5,
+      "azucares_g": 1,
       "confianza": "alta"
     },
     {
@@ -19,6 +20,7 @@
       "proteina_g": 20.6,
       "carbohidratos_g": 11.4,
       "grasa_g": 8.1,
+      "azucares_g": 1.4,
       "confianza": "media"
     },
     {
@@ -29,6 +31,7 @@
       "proteina_g": 10,
       "carbohidratos_g": 0.5,
       "grasa_g": 0,
+      "azucares_g": 0.5,
       "confianza": "alta"
     },
     {
@@ -39,6 +42,7 @@
       "proteina_g": 12,
       "carbohidratos_g": 8.3,
       "grasa_g": 0.6,
+      "azucares_g": 8.3,
       "confianza": "media"
     },
     {
@@ -49,6 +53,7 @@
       "proteina_g": 10.2,
       "carbohidratos_g": 9.8,
       "grasa_g": 2.8,
+      "azucares_g": 9.8,
       "confianza": "alta"
     },
     {
@@ -59,7 +64,74 @@
       "proteina_g": 6.9,
       "carbohidratos_g": 9.8,
       "grasa_g": 9,
+      "azucares_g": 8.6,
       "confianza": "alta"
+    },
+    {
+      "id": "pan_integral_unidad",
+      "nombre": "Pan integral (1 unidad ~80g)",
+      "porcion": "80g",
+      "kcal": 200,
+      "proteina_g": 7,
+      "carbohidratos_g": 37,
+      "grasa_g": 3,
+      "azucares_g": 3,
+      "confianza": "estimado"
+    },
+    {
+      "id": "huevos_revueltos_2u",
+      "nombre": "2 huevos revueltos (con un poco de materia grasa)",
+      "porcion": "2 unidades",
+      "kcal": 200,
+      "proteina_g": 12.5,
+      "carbohidratos_g": 1,
+      "grasa_g": 15,
+      "azucares_g": 1,
+      "confianza": "estimado"
+    },
+    {
+      "id": "jalea_regimel_1cal",
+      "nombre": "Jalea Regimel 1 caloría (sin azúcar)",
+      "porcion": "1 unidad",
+      "kcal": 2.5,
+      "proteina_g": 0,
+      "carbohidratos_g": 0.5,
+      "grasa_g": 0,
+      "azucares_g": 0,
+      "confianza": "estimado"
+    },
+    {
+      "id": "pina_lata_almibar",
+      "nombre": "Piña en lata en almíbar",
+      "porcion": "100g",
+      "kcal": 60,
+      "proteina_g": 0.3,
+      "carbohidratos_g": 15,
+      "grasa_g": 0,
+      "azucares_g": 15,
+      "confianza": "estimado"
+    },
+    {
+      "id": "salmon_horno_150g",
+      "nombre": "Salmón al horno (sin aceite añadido)",
+      "porcion": "150g",
+      "kcal": 290,
+      "proteina_g": 34,
+      "carbohidratos_g": 0,
+      "grasa_g": 16,
+      "azucares_g": 0,
+      "confianza": "estimado"
+    },
+    {
+      "id": "arroz_cocido_150g",
+      "nombre": "Arroz blanco cocido",
+      "porcion": "150g",
+      "kcal": 195,
+      "proteina_g": 4,
+      "carbohidratos_g": 43,
+      "grasa_g": 0.4,
+      "azucares_g": 0.1,
+      "confianza": "estimado"
     }
   ]
 }
