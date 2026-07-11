@@ -180,6 +180,18 @@
       "azucares_g": 2.2,
       "confianza": "estimado",
       "origen": "busqueda_web"
+    },
+    {
+      "id": "lomo_peruano_saltado",
+      "nombre": "Lomo Peruano Saltado (con arroz y papas fritas)",
+      "porcion": "1 porción restaurante (~120g lomo + 230g arroz + 80g papas fritas)",
+      "kcal": 937,
+      "proteina_g": 47,
+      "carbohidratos_g": 113,
+      "grasa_g": 32,
+      "azucares_g": 8,
+      "confianza": "estimado",
+      "origen": "busqueda_web"
     }
   ]
 }
