@@ -51,6 +51,15 @@
     border-radius:10px; padding:20px; margin-top:8px;
   }
   .table-panel h2{font-size:14px; margin:0 0 16px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.04em;}
+  .collapsible-header{
+    display:flex; align-items:center; justify-content:space-between;
+    cursor:pointer; user-select:none;
+  }
+  .collapsible-header .chevron{
+    color:var(--muted); font-size:12px; transition:transform .2s ease;
+  }
+  .table-panel.collapsed .chevron{ transform:rotate(-90deg); }
+  .table-panel.collapsed .collapsible-body{ display:none; }
   table{width:100%; border-collapse:collapse; font-size:13px;}
   th,td{text-align:left; padding:8px 10px; border-bottom:1px solid var(--panel-border);}
   th{color:var(--muted); font-weight:500; font-size:12px;}
@@ -82,25 +91,35 @@
     </div>
   </div>
 
-  <div class="table-panel">
-    <h2>Registro diario</h2>
-    <table id="tabla">
-      <thead>
-        <tr><th>Fecha</th><th>Kcal</th><th>KcalQ</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Detalle</th></tr>
-      </thead>
-      <tbody id="tabla-body"></tbody>
-    </table>
-    <div class="empty" id="empty-tabla" style="display:none;">Aún no hay entradas registradas.</div>
+  <div class="table-panel" id="panel-diario">
+    <div class="collapsible-header" onclick="document.getElementById('panel-diario').classList.toggle('collapsed')">
+      <h2 style="margin:0;">Registro diario</h2>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="collapsible-body">
+      <table id="tabla">
+        <thead>
+          <tr><th>Fecha</th><th>Kcal</th><th>KcalQ</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Detalle</th></tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+      </table>
+      <div class="empty" id="empty-tabla" style="display:none;">Aún no hay entradas registradas.</div>
+    </div>
   </div>
 
-  <div class="table-panel">
-    <h2>Base de alimentos de referencia</h2>
-    <table id="tabla-productos">
-      <thead>
-        <tr><th>Producto</th><th>Porción</th><th>Kcal</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Fuente</th></tr>
-      </thead>
-      <tbody id="tabla-productos-body"></tbody>
-    </table>
+  <div class="table-panel" id="panel-productos">
+    <div class="collapsible-header" onclick="document.getElementById('panel-productos').classList.toggle('collapsed')">
+      <h2 style="margin:0;">Base de alimentos de referencia</h2>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="collapsible-body">
+      <table id="tabla-productos">
+        <thead>
+          <tr><th>Producto</th><th>Porción</th><th>Kcal</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Fuente</th></tr>
+        </thead>
+        <tbody id="tabla-productos-body"></tbody>
+      </table>
+    </div>
   </div>
 </div>
 
@@ -151,8 +170,7 @@ const FOOD_DATABASE = [
   {"id": "salmon_horno_150g", "nombre": "Salmón al horno (sin aceite añadido)", "porcion": "150g", "kcal": 290, "proteina_g": 34, "carbohidratos_g": 0, "grasa_g": 16, "azucares_g": 0, "origen": "estimado"},
   {"id": "arroz_cocido_150g", "nombre": "Arroz blanco cocido", "porcion": "150g", "kcal": 195, "proteina_g": 4, "carbohidratos_g": 43, "grasa_g": 0.4, "azucares_g": 0.1, "origen": "estimado"},
   {"id": "coca_cola_zero_500ml", "nombre": "Coca-Cola Zero", "porcion": "500ml", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "origen": "conocimiento_general"},
-  {"id": "trutro_entero_horno_sin_piel", "nombre": "Trutro entero (corto+largo) al horno SIN piel, con cebolla y ajo", "porcion": "~220g trutro sin piel + cebolla/ajo", "kcal": 406, "proteina_g": 55.7, "carbohidratos_g": 5.2, "grasa_g": 16.5, "azucares_g": 1.8, "origen": "busqueda_web"},
-  {"id": "papa_horno_180g", "nombre": "Papa al horno (con piel, sin materia grasa añadida)", "porcion": "180g (1 papa mediana)", "kcal": 167, "proteina_g": 3.8, "carbohidratos_g": 37.8, "grasa_g": 0.2, "azucares_g": 2.2, "origen": "busqueda_web"}
+  {"id": "trutro_entero_horno_cebolla_ajo_papa", "nombre": "Trutro entero (corto+largo) al horno SIN piel, con cebolla, ajo y papa al horno", "porcion": "~220g trutro sin piel + 180g papa + cebolla/ajo", "kcal": 573, "proteina_g": 59.5, "carbohidratos_g": 43, "grasa_g": 16.7, "azucares_g": 3.9, "origen": "busqueda_web"}
 ];
 // ==== FIN DATOS ====
 
