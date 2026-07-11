@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -101,15 +101,15 @@
       "confianza": "estimado"
     },
     {
-      "id": "pina_lata_almibar",
-      "nombre": "Piña en lata en almíbar",
-      "porcion": "100g",
-      "kcal": 60,
-      "proteina_g": 0.3,
-      "carbohidratos_g": 15,
+      "id": "kem_pina_lata_350ml",
+      "nombre": "Kem Piña (bebida gaseosa CCU, lata)",
+      "porcion": "350ml (1 lata)",
+      "kcal": 147,
+      "proteina_g": 0,
+      "carbohidratos_g": 37,
       "grasa_g": 0,
-      "azucares_g": 15,
-      "confianza": "estimado"
+      "azucares_g": 37,
+      "confianza": "alta"
     },
     {
       "id": "salmon_horno_150g",
@@ -132,6 +132,17 @@
       "grasa_g": 0.4,
       "azucares_g": 0.1,
       "confianza": "estimado"
+    },
+    {
+      "id": "coca_cola_zero_500ml",
+      "nombre": "Coca-Cola Zero",
+      "porcion": "500ml",
+      "kcal": 1,
+      "proteina_g": 0,
+      "carbohidratos_g": 0.2,
+      "grasa_g": 0,
+      "azucares_g": 0,
+      "confianza": "alta"
     }
   ]
 }
