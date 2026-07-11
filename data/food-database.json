@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -10,7 +10,8 @@
       "carbohidratos_g": 3,
       "grasa_g": 1.5,
       "azucares_g": 1,
-      "confianza": "alta"
+      "confianza": "alta",
+      "origen": "foto"
     },
     {
       "id": "barra_proteica",
@@ -21,7 +22,8 @@
       "carbohidratos_g": 11.4,
       "grasa_g": 8.1,
       "azucares_g": 1.4,
-      "confianza": "media"
+      "confianza": "media",
+      "origen": "foto"
     },
     {
       "id": "jalea_proteica_watts",
@@ -32,7 +34,8 @@
       "carbohidratos_g": 0.5,
       "grasa_g": 0,
       "azucares_g": 0.5,
-      "confianza": "alta"
+      "confianza": "alta",
+      "origen": "foto"
     },
     {
       "id": "yogurt_protein_loncoleche",
@@ -43,7 +46,8 @@
       "carbohidratos_g": 8.3,
       "grasa_g": 0.6,
       "azucares_g": 8.3,
-      "confianza": "media"
+      "confianza": "media",
+      "origen": "foto"
     },
     {
       "id": "yogurt_protein_soprole",
@@ -54,7 +58,8 @@
       "carbohidratos_g": 9.8,
       "grasa_g": 2.8,
       "azucares_g": 9.8,
-      "confianza": "alta"
+      "confianza": "alta",
+      "origen": "foto"
     },
     {
       "id": "yogurt_blanco_danone",
@@ -65,7 +70,8 @@
       "carbohidratos_g": 9.8,
       "grasa_g": 9,
       "azucares_g": 8.6,
-      "confianza": "alta"
+      "confianza": "alta",
+      "origen": "foto"
     },
     {
       "id": "pan_integral_unidad",
@@ -76,7 +82,8 @@
       "carbohidratos_g": 37,
       "grasa_g": 3,
       "azucares_g": 3,
-      "confianza": "estimado"
+      "confianza": "estimado",
+      "origen": "estimado"
     },
     {
       "id": "huevos_revueltos_2u",
@@ -87,7 +94,8 @@
       "carbohidratos_g": 1,
       "grasa_g": 15,
       "azucares_g": 1,
-      "confianza": "estimado"
+      "confianza": "estimado",
+      "origen": "estimado"
     },
     {
       "id": "jalea_regimel_1cal",
@@ -98,7 +106,8 @@
       "carbohidratos_g": 0.5,
       "grasa_g": 0,
       "azucares_g": 0,
-      "confianza": "estimado"
+      "confianza": "estimado",
+      "origen": "estimado"
     },
     {
       "id": "kem_pina_lata_350ml",
@@ -109,7 +118,8 @@
       "carbohidratos_g": 37,
       "grasa_g": 0,
       "azucares_g": 37,
-      "confianza": "alta"
+      "confianza": "alta",
+      "origen": "busqueda_web"
     },
     {
       "id": "salmon_horno_150g",
@@ -120,7 +130,8 @@
       "carbohidratos_g": 0,
       "grasa_g": 16,
       "azucares_g": 0,
-      "confianza": "estimado"
+      "confianza": "estimado",
+      "origen": "estimado"
     },
     {
       "id": "arroz_cocido_150g",
@@ -131,7 +142,8 @@
       "carbohidratos_g": 43,
       "grasa_g": 0.4,
       "azucares_g": 0.1,
-      "confianza": "estimado"
+      "confianza": "estimado",
+      "origen": "estimado"
     },
     {
       "id": "coca_cola_zero_500ml",
@@ -142,7 +154,8 @@
       "carbohidratos_g": 0.2,
       "grasa_g": 0,
       "azucares_g": 0,
-      "confianza": "alta"
+      "confianza": "alta",
+      "origen": "conocimiento_general"
     }
   ]
 }
