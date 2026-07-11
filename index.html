@@ -67,23 +67,15 @@
 
   <div class="grid">
     <div class="panel kcal">
-      <h2>Calorías (kcal) · línea = consumo, barras = quemadas por actividad</h2>
-      <div class="last" id="last-kcal">–</div>
       <canvas id="chartKcal"></canvas>
     </div>
     <div class="panel prot">
-      <h2>Proteínas (g) · objetivo 150g</h2>
-      <div class="last" id="last-prot">–</div>
       <canvas id="chartProt"></canvas>
     </div>
     <div class="panel carb">
-      <h2>Carbohidratos (g) · objetivo 155g</h2>
-      <div class="last" id="last-carb">–</div>
       <canvas id="chartCarb"></canvas>
     </div>
     <div class="panel sugar">
-      <h2>Azúcares (g) · tope 40g</h2>
-      <div class="last" id="last-sugar">–</div>
       <canvas id="chartSugar"></canvas>
     </div>
   </div>
@@ -92,7 +84,7 @@
     <h2>Registro diario</h2>
     <table id="tabla">
       <thead>
-        <tr><th>Fecha</th><th>Kcal</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Detalle</th></tr>
+        <tr><th>Fecha</th><th>Kcal</th><th>KcalQ</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Detalle</th></tr>
       </thead>
       <tbody id="tabla-body"></tbody>
     </table>
@@ -152,7 +144,7 @@ function fmtFecha(f){
 const gridColor = '#262b36';
 const tickColor = '#8b93a3';
 
-function baseLineChart(canvasId, labels, data, color, extraDatasets){
+function baseLineChart(canvasId, title, labels, data, color, extraDatasets){
   const datasets = [{
     label: '', data, borderColor: color,
     backgroundColor: color + '22', fill: true, tension: 0.3,
@@ -164,9 +156,12 @@ function baseLineChart(canvasId, labels, data, color, extraDatasets){
     data: { labels, datasets },
     options: {
       responsive: true,
-      plugins: { legend: { display: !!extraDatasets, labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } } },
+      plugins: {
+        title: { display: true, text: title, color: '#ffffff', font: { weight: 'bold', size: 15 }, align: 'center', padding: { bottom: 14 } },
+        legend: { display: true, position: 'bottom', labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } }
+      },
       scales: {
-        x: { ticks: { color: tickColor }, grid: { color: gridColor } },
+        x: { offset: false, ticks: { color: tickColor }, grid: { color: gridColor } },
         y: { ticks: { color: tickColor }, grid: { color: gridColor }, beginAtZero: true }
       }
     }
@@ -175,15 +170,12 @@ function baseLineChart(canvasId, labels, data, color, extraDatasets){
 
 if (sorted.length === 0){
   document.getElementById('empty-tabla').style.display = 'block';
+  const titles = { chartKcal: 'Calorías quemadas vs Ingeridas', chartProt: 'Consumo Proteínas', chartCarb: 'Consumo Carbohidratos', chartSugar: 'Consumo Azúcares' };
   ['chartKcal','chartProt','chartCarb','chartSugar'].forEach(id=>{
-    baseLineChart(id, [], []);
+    baseLineChart(id, titles[id], [], []);
   });
 } else {
   const last = sorted[sorted.length - 1];
-  document.getElementById('last-kcal').textContent = last.totales.kcal + ' kcal';
-  document.getElementById('last-prot').textContent = last.totales.proteina_g + ' g';
-  document.getElementById('last-carb').textContent = last.totales.carbohidratos_g + ' g';
-  document.getElementById('last-sugar').textContent = last.totales.azucares_g + ' g';
 
   const labels = sorted.map(d => fmtFecha(d.fecha));
   const kcal = sorted.map(d => d.totales.kcal);
@@ -196,9 +188,9 @@ if (sorted.length === 0){
     type: 'bar',
     data: { labels, datasets: [
       { type: 'bar', label: 'Quemadas (actividad)', data: quemadas,
-        backgroundColor: '#2d9cdb55', borderColor: '#2d9cdb', borderWidth: 1, order: 3 },
+        backgroundColor: '#2d9cdb', borderColor: '#2d9cdb', borderWidth: 1, order: 3 },
       { type: 'line', label: 'Consumidas', data: kcal, borderColor: '#f2994a',
-        backgroundColor: '#f2994a22', fill: true, tension: 0.3, pointRadius: 3,
+        backgroundColor: '#f2994a', fill: false, tension: 0.3, pointRadius: 3,
         pointBackgroundColor: '#f2994a', order: 0 },
       { type: 'line', label: 'Metabolismo basal (1600)', data: labels.map(() => METABOLISMO_BASAL),
         borderColor: '#4f5666', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0, order: 1 },
@@ -207,22 +199,25 @@ if (sorted.length === 0){
     ]},
     options: {
       responsive: true,
-      plugins: { legend: { labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } } },
+      plugins: {
+        title: { display: true, text: 'Calorías quemadas vs Ingeridas', color: '#ffffff', font: { weight: 'bold', size: 15 }, align: 'center', padding: { bottom: 14 } },
+        legend: { display: true, position: 'bottom', labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } }
+      },
       scales: {
-        x: { ticks: { color: tickColor }, grid: { color: gridColor } },
+        x: { offset: false, ticks: { color: tickColor }, grid: { color: gridColor } },
         y: { ticks: { color: tickColor }, grid: { color: gridColor }, beginAtZero: true }
       }
     }
   });
-  baseLineChart('chartProt', labels, prot, '#56ccf2', [
+  baseLineChart('chartProt', 'Consumo Proteínas', labels, prot, '#56ccf2', [
     { label: 'Objetivo (150g)', data: labels.map(() => OBJETIVO_PROTEINA),
       borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
   ]);
-  baseLineChart('chartCarb', labels, carb, '#bb6bd9', [
+  baseLineChart('chartCarb', 'Consumo Carbohidratos', labels, carb, '#bb6bd9', [
     { label: 'Objetivo (155g)', data: labels.map(() => OBJETIVO_CARBOHIDRATOS),
       borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
   ]);
-  baseLineChart('chartSugar', labels, sugar, '#eb5757', [
+  baseLineChart('chartSugar', 'Consumo Azúcares', labels, sugar, '#eb5757', [
     { label: 'Tope (40g)', data: labels.map(() => OBJETIVO_AZUCAR),
       borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
   ]);
@@ -231,7 +226,8 @@ if (sorted.length === 0){
   [...sorted].reverse().forEach(d => {
     const tr = document.createElement('tr');
     const itemsStr = (d.items || []).map(i => i.nombre).join(', ');
-    tr.innerHTML = `<td>${d.fecha}</td><td>${d.totales.kcal}</td><td>${d.totales.proteina_g}</td><td>${d.totales.carbohidratos_g}</td><td>${d.totales.azucares_g}</td><td>${d.totales.grasa_g}</td><td class="items">${itemsStr}</td>`;
+    const kcalQ = (d.actividad && d.actividad.kcal_quemadas_total) || 0;
+    tr.innerHTML = `<td>${d.fecha}</td><td>${d.totales.kcal}</td><td>${kcalQ}</td><td>${d.totales.proteina_g}</td><td>${d.totales.carbohidratos_g}</td><td>${d.totales.azucares_g}</td><td>${d.totales.grasa_g}</td><td class="items">${itemsStr}</td>`;
     tbody.appendChild(tr);
   });
 }
