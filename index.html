@@ -55,6 +55,7 @@
   th{color:var(--muted); font-weight:500; font-size:12px;}
   td.items{color:var(--muted); font-size:12px; max-width:300px;}
   .empty{color:var(--muted); font-size:14px; padding:24px 0; text-align:center;}
+  .chart-wrap{position:relative; height:300px;}
   canvas{max-height:260px;}
 </style>
 </head>
@@ -67,16 +68,16 @@
 
   <div class="grid">
     <div class="panel kcal">
-      <canvas id="chartKcal"></canvas>
+      <div class="chart-wrap"><canvas id="chartKcal"></canvas></div>
     </div>
     <div class="panel prot">
-      <canvas id="chartProt"></canvas>
+      <div class="chart-wrap"><canvas id="chartProt"></canvas></div>
     </div>
     <div class="panel carb">
-      <canvas id="chartCarb"></canvas>
+      <div class="chart-wrap"><canvas id="chartCarb"></canvas></div>
     </div>
     <div class="panel sugar">
-      <canvas id="chartSugar"></canvas>
+      <div class="chart-wrap"><canvas id="chartSugar"></canvas></div>
     </div>
   </div>
 
@@ -156,6 +157,7 @@ function baseLineChart(canvasId, title, labels, data, color, extraDatasets){
     data: { labels, datasets },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         title: { display: true, text: title, color: '#ffffff', font: { weight: 'bold', size: 15 }, align: 'center', padding: { bottom: 14 } },
         legend: { display: true, position: 'bottom', labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } }
@@ -187,18 +189,19 @@ if (sorted.length === 0){
   new Chart(document.getElementById('chartKcal'), {
     type: 'bar',
     data: { labels, datasets: [
-      { type: 'bar', label: 'Quemadas (actividad)', data: quemadas,
+      { type: 'bar', label: 'Quemadas', data: quemadas,
         backgroundColor: '#2d9cdb', borderColor: '#2d9cdb', borderWidth: 1, order: 3 },
       { type: 'line', label: 'Consumidas', data: kcal, borderColor: '#f2994a',
         backgroundColor: '#f2994a', fill: false, tension: 0.3, pointRadius: 3,
         pointBackgroundColor: '#f2994a', order: 0 },
-      { type: 'line', label: 'Metabolismo basal (1600)', data: labels.map(() => METABOLISMO_BASAL),
+      { type: 'line', label: 'Basal (1600)', data: labels.map(() => METABOLISMO_BASAL),
         borderColor: '#4f5666', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0, order: 1 },
       { type: 'line', label: 'Objetivo (1760)', data: labels.map(() => OBJETIVO_KCAL),
         borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0, order: 2 }
     ]},
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         title: { display: true, text: 'Calorías quemadas vs Ingeridas', color: '#ffffff', font: { weight: 'bold', size: 15 }, align: 'center', padding: { bottom: 14 } },
         legend: { display: true, position: 'bottom', labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } }
