@@ -94,10 +94,10 @@
   </div>
 
   <div class="table-panel">
-    <h2>Productos base (fichas nutricionales fotografiadas)</h2>
+    <h2>Base de alimentos de referencia</h2>
     <table id="tabla-productos">
       <thead>
-        <tr><th>Producto</th><th>Porción</th><th>Kcal</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th></tr>
+        <tr><th>Producto</th><th>Porción</th><th>Kcal</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Fuente</th></tr>
       </thead>
       <tbody id="tabla-productos-body"></tbody>
     </table>
@@ -150,7 +150,8 @@ const FOOD_DATABASE = [
   {"id": "kem_pina_lata_350ml", "nombre": "Kem Piña (bebida gaseosa CCU, lata)", "porcion": "350ml (1 lata)", "kcal": 147, "proteina_g": 0, "carbohidratos_g": 37, "grasa_g": 0, "azucares_g": 37, "origen": "busqueda_web"},
   {"id": "salmon_horno_150g", "nombre": "Salmón al horno (sin aceite añadido)", "porcion": "150g", "kcal": 290, "proteina_g": 34, "carbohidratos_g": 0, "grasa_g": 16, "azucares_g": 0, "origen": "estimado"},
   {"id": "arroz_cocido_150g", "nombre": "Arroz blanco cocido", "porcion": "150g", "kcal": 195, "proteina_g": 4, "carbohidratos_g": 43, "grasa_g": 0.4, "azucares_g": 0.1, "origen": "estimado"},
-  {"id": "coca_cola_zero_500ml", "nombre": "Coca-Cola Zero", "porcion": "500ml", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "origen": "conocimiento_general"}
+  {"id": "coca_cola_zero_500ml", "nombre": "Coca-Cola Zero", "porcion": "500ml", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "origen": "conocimiento_general"},
+  {"id": "trutro_entero_horno_cebolla_ajo_papa", "nombre": "Trutro entero (corto+largo) al horno con cebolla, ajo y papa al horno", "porcion": "~220g trutro con piel + 180g papa + cebolla/ajo", "kcal": 663, "proteina_g": 48.5, "carbohidratos_g": 43, "grasa_g": 33, "azucares_g": 3.9, "origen": "busqueda_web"}
 ];
 // ==== FIN DATOS ====
 
@@ -256,9 +257,10 @@ if (sorted.length === 0){
 }
 
 const tbodyProductos = document.getElementById('tabla-productos-body');
-FOOD_DATABASE.filter(p => p.origen === 'foto').forEach(p => {
+const FUENTE_LABEL = { foto: 'Foto', estimado: 'Estimado', busqueda_web: 'Investigado', conocimiento_general: 'Conocido' };
+FOOD_DATABASE.forEach(p => {
   const tr = document.createElement('tr');
-  tr.innerHTML = `<td>${p.nombre}</td><td>${p.porcion}</td><td>${p.kcal}</td><td>${p.proteina_g}</td><td>${p.carbohidratos_g}</td><td>${p.azucares_g}</td><td>${p.grasa_g}</td>`;
+  tr.innerHTML = `<td>${p.nombre}</td><td>${p.porcion}</td><td>${p.kcal}</td><td>${p.proteina_g}</td><td>${p.carbohidratos_g}</td><td>${p.azucares_g}</td><td>${p.grasa_g}</td><td>${FUENTE_LABEL[p.origen] || p.origen}</td>`;
   tbodyProductos.appendChild(tr);
 });
 
