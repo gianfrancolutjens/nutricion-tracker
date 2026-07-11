@@ -9,7 +9,8 @@
       {"nombre": "2 yogurt blanco + 1 scoop proteína", "kcal": 414, "proteina_g": 37.8, "carbohidratos_g": 22.6, "grasa_g": 19.5, "azucares_g": 18.2, "fuente": "food-database"},
       {"nombre": "2 barras de proteína", "kcal": 424, "proteina_g": 41.2, "carbohidratos_g": 22.8, "grasa_g": 16.2, "azucares_g": 2.8, "fuente": "food-database"}
     ],
-    "totales": {"kcal": 1875, "proteina_g": 136.5, "carbohidratos_g": 164.4, "grasa_g": 70.1, "azucares_g": 62.1}
+    "totales": {"kcal": 1875, "proteina_g": 136.5, "carbohidratos_g": 164.4, "grasa_g": 70.1, "azucares_g": 62.1},
+    "actividad": {"detalle": [], "kcal_quemadas_total": 0, "nota": "Descanso, no fue al gym"}
   },
   {
     "fecha": "2026-07-10",
@@ -21,6 +22,7 @@
       {"nombre": "1 Coca-Cola Zero 500ml", "kcal": 2, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"},
       {"nombre": "1 porción de pie de limón", "kcal": 380, "proteina_g": 5, "carbohidratos_g": 52, "grasa_g": 15, "azucares_g": 38, "fuente": "estimado"}
     ],
-    "totales": {"kcal": 1849, "proteina_g": 87.1, "carbohidratos_g": 204.5, "grasa_g": 73.55, "azucares_g": 112.9}
+    "totales": {"kcal": 1849, "proteina_g": 87.1, "carbohidratos_g": 204.5, "grasa_g": 73.55, "azucares_g": 112.9},
+    "actividad": {"detalle": [{"actividad": "Elíptica", "duracion_min": 40, "intensidad": "moderada", "kcal_quemadas": 250}], "kcal_quemadas_total": 250}
   }
 ]
