@@ -2,27 +2,251 @@
   {
     "fecha": "2026-07-09",
     "items": [
-      {"nombre": "Pan integral + 2 huevos revueltos", "kcal": 400, "proteina_g": 19.5, "carbohidratos_g": 38, "grasa_g": 18, "azucares_g": 4, "fuente": "estimado"},
-      {"nombre": "2 jaleas Regimel 1 caloría", "kcal": 5, "proteina_g": 0, "carbohidratos_g": 1, "grasa_g": 0, "azucares_g": 0, "fuente": "estimado"},
-      {"nombre": "1 Kem Piña lata (350ml, bebida)", "kcal": 147, "proteina_g": 0, "carbohidratos_g": 37, "grasa_g": 0, "azucares_g": 37, "fuente": "food-database"},
-      {"nombre": "Salmón al horno con arroz", "kcal": 485, "proteina_g": 38, "carbohidratos_g": 43, "grasa_g": 16.4, "azucares_g": 0.1, "fuente": "estimado"},
-      {"nombre": "2 yogurt blanco + 1 scoop proteína", "kcal": 414, "proteina_g": 37.8, "carbohidratos_g": 22.6, "grasa_g": 19.5, "azucares_g": 18.2, "fuente": "food-database"},
-      {"nombre": "2 barras de proteína", "kcal": 424, "proteina_g": 41.2, "carbohidratos_g": 22.8, "grasa_g": 16.2, "azucares_g": 2.8, "fuente": "food-database"}
+      {
+        "nombre": "Pan integral + 2 huevos revueltos",
+        "kcal": 400,
+        "proteina_g": 19.5,
+        "carbohidratos_g": 38,
+        "grasa_g": 18,
+        "azucares_g": 4,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 jaleas Regimel 1 caloría",
+        "kcal": 5,
+        "proteina_g": 0,
+        "carbohidratos_g": 1,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 Kem Piña lata (350ml, bebida)",
+        "kcal": 147,
+        "proteina_g": 0,
+        "carbohidratos_g": 37,
+        "grasa_g": 0,
+        "azucares_g": 37,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Salmón al horno con arroz",
+        "kcal": 485,
+        "proteina_g": 38,
+        "carbohidratos_g": 43,
+        "grasa_g": 16.4,
+        "azucares_g": 0.1,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 yogurt blanco + 1 scoop proteína",
+        "kcal": 414,
+        "proteina_g": 37.8,
+        "carbohidratos_g": 22.6,
+        "grasa_g": 19.5,
+        "azucares_g": 18.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 barras de proteína",
+        "kcal": 424,
+        "proteina_g": 41.2,
+        "carbohidratos_g": 22.8,
+        "grasa_g": 16.2,
+        "azucares_g": 2.8,
+        "fuente": "food-database"
+      }
     ],
-    "totales": {"kcal": 1875, "proteina_g": 136.5, "carbohidratos_g": 164.4, "grasa_g": 70.1, "azucares_g": 62.1},
-    "actividad": {"pasos": 3261, "detalle": [], "kcal_quemadas_total": 1719.6, "nota": "Descanso, no fue al gym. KCALQ = BMR(1625) + pasos_neto(94.6) + ejercicio(0)"}
+    "totales": {
+      "kcal": 1875,
+      "proteina_g": 136.5,
+      "carbohidratos_g": 164.4,
+      "grasa_g": 70.1,
+      "azucares_g": 62.1
+    },
+    "actividad": {
+      "pasos": 3261,
+      "detalle": [],
+      "kcal_quemadas_total": 1719.6,
+      "nota": "Descanso, no fue al gym. KCALQ = BMR(1625) + pasos_neto(94.6) + ejercicio(0)"
+    }
   },
   {
     "fecha": "2026-07-10",
     "items": [
-      {"nombre": "Wrap de pollo (tortilla integral, pollo sweet thai panko, quinoa tricolor, palta, verduras, nueces, mostaza miel, salsa tailandesa)", "kcal": 800, "proteina_g": 34, "carbohidratos_g": 87, "grasa_g": 35, "azucares_g": 19, "fuente": "estimado"},
-      {"nombre": "2 yogurt blanco + 1 scoop proteína", "kcal": 414, "proteina_g": 37.8, "carbohidratos_g": 22.6, "grasa_g": 19.5, "azucares_g": 18.2, "fuente": "food-database"},
-      {"nombre": "1/2 barra de proteína", "kcal": 106, "proteina_g": 10.3, "carbohidratos_g": 5.7, "grasa_g": 4.05, "azucares_g": 0.7, "fuente": "food-database"},
-      {"nombre": "1 Kem Piña lata completa (350ml)", "kcal": 147, "proteina_g": 0, "carbohidratos_g": 37, "grasa_g": 0, "azucares_g": 37, "fuente": "food-database"},
-      {"nombre": "1 Coca-Cola Zero 500ml", "kcal": 2, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"},
-      {"nombre": "1 porción de pie de limón", "kcal": 380, "proteina_g": 5, "carbohidratos_g": 52, "grasa_g": 15, "azucares_g": 38, "fuente": "estimado"}
+      {
+        "nombre": "Wrap de pollo (tortilla integral, pollo sweet thai panko, quinoa tricolor, palta, verduras, nueces, mostaza miel, salsa tailandesa)",
+        "kcal": 800,
+        "proteina_g": 34,
+        "carbohidratos_g": 87,
+        "grasa_g": 35,
+        "azucares_g": 19,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 yogurt blanco + 1 scoop proteína",
+        "kcal": 414,
+        "proteina_g": 37.8,
+        "carbohidratos_g": 22.6,
+        "grasa_g": 19.5,
+        "azucares_g": 18.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1/2 barra de proteína",
+        "kcal": 106,
+        "proteina_g": 10.3,
+        "carbohidratos_g": 5.7,
+        "grasa_g": 4.05,
+        "azucares_g": 0.7,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 Kem Piña lata completa (350ml)",
+        "kcal": 147,
+        "proteina_g": 0,
+        "carbohidratos_g": 37,
+        "grasa_g": 0,
+        "azucares_g": 37,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 Coca-Cola Zero 500ml",
+        "kcal": 2,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.2,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 porción de pie de limón",
+        "kcal": 380,
+        "proteina_g": 5,
+        "carbohidratos_g": 52,
+        "grasa_g": 15,
+        "azucares_g": 38,
+        "fuente": "estimado"
+      }
     ],
-    "totales": {"kcal": 1849, "proteina_g": 87.1, "carbohidratos_g": 204.5, "grasa_g": 73.55, "azucares_g": 112.9},
-    "actividad": {"pasos": 3585, "detalle": [{"actividad": "Elíptica", "duracion_min": 40, "intensidad": "moderada", "kcal_quemadas_neto": 200}], "kcal_quemadas_total": 1929.0, "nota": "KCALQ = BMR(1625) + pasos_neto(104.0) + eliptica_neta(200)"}
+    "totales": {
+      "kcal": 1849,
+      "proteina_g": 87.1,
+      "carbohidratos_g": 204.5,
+      "grasa_g": 73.55,
+      "azucares_g": 112.9
+    },
+    "actividad": {
+      "pasos": 3585,
+      "detalle": [
+        {
+          "actividad": "Elíptica",
+          "duracion_min": 40,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 200
+        }
+      ],
+      "kcal_quemadas_total": 1929.0,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(104.0) + eliptica_neta(200)"
+    }
+  },
+  {
+    "fecha": "2026-07-11",
+    "items": [
+      {
+        "nombre": "Lomo Peruano Saltado (con arroz y papas fritas)",
+        "kcal": 937,
+        "proteina_g": 47,
+        "carbohidratos_g": 113,
+        "grasa_g": 32,
+        "azucares_g": 8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 Coca-Cola Zero",
+        "kcal": 1,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.2,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 yogurt blanco Danone",
+        "kcal": 294,
+        "proteina_g": 13.8,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 18,
+        "azucares_g": 17.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 scoop proteína Gold Standard",
+        "kcal": 120,
+        "proteina_g": 24,
+        "carbohidratos_g": 3,
+        "grasa_g": 1.5,
+        "azucares_g": 1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 Jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Hamburguesa (pan, carne, ketchup, mayonesa, tocino)",
+        "kcal": 700,
+        "proteina_g": 34,
+        "carbohidratos_g": 45,
+        "grasa_g": 35,
+        "azucares_g": 10,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 piscola",
+        "kcal": 220,
+        "proteina_g": 0,
+        "carbohidratos_g": 28,
+        "grasa_g": 0,
+        "azucares_g": 28,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1/2 Kem Piña lata (350ml)",
+        "kcal": 73.5,
+        "proteina_g": 0,
+        "carbohidratos_g": 18.5,
+        "grasa_g": 0,
+        "azucares_g": 18.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1/2 barra de proteína",
+        "kcal": 106,
+        "proteina_g": 10.3,
+        "carbohidratos_g": 5.7,
+        "grasa_g": 4.05,
+        "azucares_g": 0.7,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2493.5,
+      "proteina_g": 139.1,
+      "carbohidratos_g": 233.5,
+      "grasa_g": 90.55,
+      "azucares_g": 83.9
+    },
+    "actividad": {
+      "pasos": 9702,
+      "detalle": [],
+      "kcal_quemadas_total": 1906.4,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(281.4) + ejercicio(0)"
+    }
   }
 ]
