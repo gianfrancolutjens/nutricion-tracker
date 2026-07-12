@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -191,6 +191,30 @@
       "grasa_g": 32,
       "azucares_g": 8,
       "confianza": "estimado",
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "hamburguesa_pan_carne_tocino",
+      "nombre": "Hamburguesa (pan, carne, ketchup, mayonesa, tocino)",
+      "porcion": "1 unidad estándar",
+      "kcal": 700,
+      "proteina_g": 34,
+      "carbohidratos_g": 45,
+      "grasa_g": 35,
+      "azucares_g": 10,
+      "confianza": "estimado",
+      "origen": "estimado"
+    },
+    {
+      "id": "piscola_estandar",
+      "nombre": "Piscola (50ml pisco + 200ml bebida cola)",
+      "porcion": "250ml (1 vaso estándar)",
+      "kcal": 220,
+      "proteina_g": 0,
+      "carbohidratos_g": 28,
+      "grasa_g": 0,
+      "azucares_g": 28,
+      "confianza": "media",
       "origen": "busqueda_web"
     }
   ]
