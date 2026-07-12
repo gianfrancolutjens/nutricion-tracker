@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -86,14 +86,14 @@
       "origen": "estimado"
     },
     {
-      "id": "huevos_revueltos_2u",
-      "nombre": "2 huevos revueltos (con un poco de materia grasa)",
-      "porcion": "2 unidades",
-      "kcal": 200,
-      "proteina_g": 12.5,
-      "carbohidratos_g": 1,
-      "grasa_g": 15,
-      "azucares_g": 1,
+      "id": "huevo_revuelto_1u",
+      "nombre": "1 huevo revuelto (con un poco de materia grasa)",
+      "porcion": "1 unidad (~50g)",
+      "kcal": 100,
+      "proteina_g": 6.25,
+      "carbohidratos_g": 0.5,
+      "grasa_g": 7.5,
+      "azucares_g": 0.5,
       "confianza": "estimado",
       "origen": "estimado"
     },
@@ -206,14 +206,14 @@
       "origen": "estimado"
     },
     {
-      "id": "piscola_estandar",
-      "nombre": "Piscola (50ml pisco + 200ml bebida cola)",
+      "id": "piscola_con_coca_zero",
+      "nombre": "Piscola con Coca-Cola Zero (50ml pisco + 200ml Coca Zero)",
       "porcion": "250ml (1 vaso estándar)",
-      "kcal": 220,
+      "kcal": 110,
       "proteina_g": 0,
-      "carbohidratos_g": 28,
+      "carbohidratos_g": 0.1,
       "grasa_g": 0,
-      "azucares_g": 28,
+      "azucares_g": 0,
       "confianza": "media",
       "origen": "busqueda_web"
     }
