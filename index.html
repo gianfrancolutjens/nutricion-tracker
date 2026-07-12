@@ -1,4 +1,4 @@
-<!-- republish 2026-07-11-v2 -->
+<!-- republish 2026-07-11-v3 -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -151,6 +151,22 @@ const DAILY_LOG = [
     ],
     "totales": {"kcal": 1849, "proteina_g": 87.1, "carbohidratos_g": 204.5, "grasa_g": 73.55, "azucares_g": 112.9},
     "actividad": {"pasos": 3585, "detalle": [{"actividad": "Elíptica", "duracion_min": 40, "intensidad": "moderada", "kcal_quemadas_neto": 200}], "kcal_quemadas_total": 1929.0, "nota": "KCALQ = BMR(1625) + pasos_neto(104.0) + eliptica_neta(200)"}
+  },
+  {
+    "fecha": "2026-07-11",
+    "items": [
+      {"nombre": "Lomo Peruano Saltado (con arroz y papas fritas)", "kcal": 937, "proteina_g": 47, "carbohidratos_g": 113, "grasa_g": 32, "azucares_g": 8, "fuente": "food-database"},
+      {"nombre": "1 Coca-Cola Zero", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"},
+      {"nombre": "2 yogurt blanco Danone", "kcal": 294, "proteina_g": 13.8, "carbohidratos_g": 19.6, "grasa_g": 18, "azucares_g": 17.2, "fuente": "food-database"},
+      {"nombre": "1 scoop proteína Gold Standard", "kcal": 120, "proteina_g": 24, "carbohidratos_g": 3, "grasa_g": 1.5, "azucares_g": 1, "fuente": "food-database"},
+      {"nombre": "1 Jalea proteica Watts", "kcal": 42, "proteina_g": 10, "carbohidratos_g": 0.5, "grasa_g": 0, "azucares_g": 0.5, "fuente": "food-database"},
+      {"nombre": "Hamburguesa (pan, carne, ketchup, mayonesa, tocino)", "kcal": 700, "proteina_g": 34, "carbohidratos_g": 45, "grasa_g": 35, "azucares_g": 10, "fuente": "estimado"},
+      {"nombre": "1 piscola", "kcal": 220, "proteina_g": 0, "carbohidratos_g": 28, "grasa_g": 0, "azucares_g": 28, "fuente": "busqueda_web"},
+      {"nombre": "1/2 Kem Piña lata (350ml)", "kcal": 73.5, "proteina_g": 0, "carbohidratos_g": 18.5, "grasa_g": 0, "azucares_g": 18.5, "fuente": "food-database"},
+      {"nombre": "1/2 barra de proteína", "kcal": 106, "proteina_g": 10.3, "carbohidratos_g": 5.7, "grasa_g": 4.05, "azucares_g": 0.7, "fuente": "food-database"}
+    ],
+    "totales": {"kcal": 2493.5, "proteina_g": 139.1, "carbohidratos_g": 233.5, "grasa_g": 90.55, "azucares_g": 83.9},
+    "actividad": {"pasos": 9702, "detalle": [], "kcal_quemadas_total": 1906.4, "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(281.4) + ejercicio(0)"}
   }
 ];
 const OBJETIVO_PROTEINA = 150;
@@ -172,7 +188,9 @@ const FOOD_DATABASE = [
   {"id": "coca_cola_zero_500ml", "nombre": "Coca-Cola Zero", "porcion": "500ml", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "origen": "conocimiento_general"},
   {"id": "trutro_entero_horno_sin_piel", "nombre": "Trutro entero (corto+largo) al horno SIN piel, con cebolla y ajo", "porcion": "~220g trutro sin piel + cebolla/ajo", "kcal": 406, "proteina_g": 55.7, "carbohidratos_g": 5.2, "grasa_g": 16.5, "azucares_g": 1.8, "origen": "busqueda_web"},
   {"id": "papa_horno_180g", "nombre": "Papa al horno (con piel, sin materia grasa añadida)", "porcion": "180g (1 papa mediana)", "kcal": 167, "proteina_g": 3.8, "carbohidratos_g": 37.8, "grasa_g": 0.2, "azucares_g": 2.2, "origen": "busqueda_web"},
-  {"id": "lomo_peruano_saltado", "nombre": "Lomo Peruano Saltado (con arroz y papas fritas)", "porcion": "1 porción restaurante (~120g lomo + 230g arroz + 80g papas fritas)", "kcal": 937, "proteina_g": 47, "carbohidratos_g": 113, "grasa_g": 32, "azucares_g": 8, "origen": "busqueda_web"}
+  {"id": "lomo_peruano_saltado", "nombre": "Lomo Peruano Saltado (con arroz y papas fritas)", "porcion": "1 porción restaurante (~120g lomo + 230g arroz + 80g papas fritas)", "kcal": 937, "proteina_g": 47, "carbohidratos_g": 113, "grasa_g": 32, "azucares_g": 8, "origen": "busqueda_web"},
+  {"id": "hamburguesa_pan_carne_tocino", "nombre": "Hamburguesa (pan, carne, ketchup, mayonesa, tocino)", "porcion": "1 unidad estándar", "kcal": 700, "proteina_g": 34, "carbohidratos_g": 45, "grasa_g": 35, "azucares_g": 10, "origen": "estimado"},
+  {"id": "piscola_estandar", "nombre": "Piscola (50ml pisco + 200ml bebida cola)", "porcion": "250ml (1 vaso estándar)", "kcal": 220, "proteina_g": 0, "carbohidratos_g": 28, "grasa_g": 0, "azucares_g": 28, "origen": "busqueda_web"}
 ];
 // ==== FIN DATOS ====
 
