@@ -1,4 +1,4 @@
-<!-- republish 2026-07-11-v3 -->
+<!-- republish 2026-07-11-v4 -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -161,11 +161,11 @@ const DAILY_LOG = [
       {"nombre": "1 scoop proteína Gold Standard", "kcal": 120, "proteina_g": 24, "carbohidratos_g": 3, "grasa_g": 1.5, "azucares_g": 1, "fuente": "food-database"},
       {"nombre": "1 Jalea proteica Watts", "kcal": 42, "proteina_g": 10, "carbohidratos_g": 0.5, "grasa_g": 0, "azucares_g": 0.5, "fuente": "food-database"},
       {"nombre": "Hamburguesa (pan, carne, ketchup, mayonesa, tocino)", "kcal": 700, "proteina_g": 34, "carbohidratos_g": 45, "grasa_g": 35, "azucares_g": 10, "fuente": "estimado"},
-      {"nombre": "1 piscola", "kcal": 220, "proteina_g": 0, "carbohidratos_g": 28, "grasa_g": 0, "azucares_g": 28, "fuente": "busqueda_web"},
+      {"nombre": "1 piscola (con Coca-Cola Zero)", "kcal": 110, "proteina_g": 0, "carbohidratos_g": 0.1, "grasa_g": 0, "azucares_g": 0, "fuente": "busqueda_web"},
       {"nombre": "1/2 Kem Piña lata (350ml)", "kcal": 73.5, "proteina_g": 0, "carbohidratos_g": 18.5, "grasa_g": 0, "azucares_g": 18.5, "fuente": "food-database"},
       {"nombre": "1/2 barra de proteína", "kcal": 106, "proteina_g": 10.3, "carbohidratos_g": 5.7, "grasa_g": 4.05, "azucares_g": 0.7, "fuente": "food-database"}
     ],
-    "totales": {"kcal": 2493.5, "proteina_g": 139.1, "carbohidratos_g": 233.5, "grasa_g": 90.55, "azucares_g": 83.9},
+    "totales": {"kcal": 2383.5, "proteina_g": 139.1, "carbohidratos_g": 205.6, "grasa_g": 90.55, "azucares_g": 55.9},
     "actividad": {"pasos": 9702, "detalle": [], "kcal_quemadas_total": 1906.4, "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(281.4) + ejercicio(0)"}
   }
 ];
@@ -180,7 +180,7 @@ const FOOD_DATABASE = [
   {"id": "yogurt_protein_soprole", "nombre": "Yogurt Protein+ Soprole", "porcion": "155g (1 unidad)", "kcal": 105, "proteina_g": 10.2, "carbohidratos_g": 9.8, "grasa_g": 2.8, "azucares_g": 9.8, "origen": "foto"},
   {"id": "yogurt_blanco_danone", "nombre": "Yogurt blanco Danone", "porcion": "150g (1 envase)", "kcal": 147, "proteina_g": 6.9, "carbohidratos_g": 9.8, "grasa_g": 9, "azucares_g": 8.6, "origen": "foto"},
   {"id": "pan_integral_unidad", "nombre": "Pan integral (1 unidad ~80g)", "porcion": "80g", "kcal": 200, "proteina_g": 7, "carbohidratos_g": 37, "grasa_g": 3, "azucares_g": 3, "origen": "estimado"},
-  {"id": "huevos_revueltos_2u", "nombre": "2 huevos revueltos (con un poco de materia grasa)", "porcion": "2 unidades", "kcal": 200, "proteina_g": 12.5, "carbohidratos_g": 1, "grasa_g": 15, "azucares_g": 1, "origen": "estimado"},
+  {"id": "huevo_revuelto_1u", "nombre": "1 huevo revuelto (con un poco de materia grasa)", "porcion": "1 unidad (~50g)", "kcal": 100, "proteina_g": 6.25, "carbohidratos_g": 0.5, "grasa_g": 7.5, "azucares_g": 0.5, "origen": "estimado"},
   {"id": "jalea_regimel_1cal", "nombre": "Jalea Regimel 1 caloría (sin azúcar)", "porcion": "1 unidad", "kcal": 2.5, "proteina_g": 0, "carbohidratos_g": 0.5, "grasa_g": 0, "azucares_g": 0, "origen": "estimado"},
   {"id": "kem_pina_lata_350ml", "nombre": "Kem Piña (bebida gaseosa CCU, lata)", "porcion": "350ml (1 lata)", "kcal": 147, "proteina_g": 0, "carbohidratos_g": 37, "grasa_g": 0, "azucares_g": 37, "origen": "busqueda_web"},
   {"id": "salmon_horno_150g", "nombre": "Salmón al horno (sin aceite añadido)", "porcion": "150g", "kcal": 290, "proteina_g": 34, "carbohidratos_g": 0, "grasa_g": 16, "azucares_g": 0, "origen": "estimado"},
@@ -190,7 +190,7 @@ const FOOD_DATABASE = [
   {"id": "papa_horno_180g", "nombre": "Papa al horno (con piel, sin materia grasa añadida)", "porcion": "180g (1 papa mediana)", "kcal": 167, "proteina_g": 3.8, "carbohidratos_g": 37.8, "grasa_g": 0.2, "azucares_g": 2.2, "origen": "busqueda_web"},
   {"id": "lomo_peruano_saltado", "nombre": "Lomo Peruano Saltado (con arroz y papas fritas)", "porcion": "1 porción restaurante (~120g lomo + 230g arroz + 80g papas fritas)", "kcal": 937, "proteina_g": 47, "carbohidratos_g": 113, "grasa_g": 32, "azucares_g": 8, "origen": "busqueda_web"},
   {"id": "hamburguesa_pan_carne_tocino", "nombre": "Hamburguesa (pan, carne, ketchup, mayonesa, tocino)", "porcion": "1 unidad estándar", "kcal": 700, "proteina_g": 34, "carbohidratos_g": 45, "grasa_g": 35, "azucares_g": 10, "origen": "estimado"},
-  {"id": "piscola_estandar", "nombre": "Piscola (50ml pisco + 200ml bebida cola)", "porcion": "250ml (1 vaso estándar)", "kcal": 220, "proteina_g": 0, "carbohidratos_g": 28, "grasa_g": 0, "azucares_g": 28, "origen": "busqueda_web"}
+  {"id": "piscola_con_coca_zero", "nombre": "Piscola con Coca-Cola Zero (50ml pisco + 200ml Coca Zero)", "porcion": "250ml (1 vaso estándar)", "kcal": 110, "proteina_g": 0, "carbohidratos_g": 0.1, "grasa_g": 0, "azucares_g": 0, "origen": "busqueda_web"}
 ];
 // ==== FIN DATOS ====
 
@@ -267,7 +267,7 @@ if (sorted.length === 0){
         legend: { display: true, position: 'bottom', labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } }
       },
       scales: {
-        x: { offset: false, ticks: { color: tickColor }, grid: { color: gridColor } },
+        x: { offset: true, ticks: { color: tickColor }, grid: { color: gridColor } },
         y: { ticks: { color: tickColor }, grid: { color: gridColor }, beginAtZero: true }
       }
     }
