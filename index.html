@@ -167,6 +167,20 @@ const DAILY_LOG = [
     ],
     "totales": {"kcal": 2383.5, "proteina_g": 139.1, "carbohidratos_g": 205.6, "grasa_g": 90.55, "azucares_g": 55.9},
     "actividad": {"pasos": 9702, "detalle": [], "kcal_quemadas_total": 1906.4, "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(281.4) + ejercicio(0)"}
+  },
+  {
+    "fecha": "2026-07-12",
+    "items": [
+      {"nombre": "1,5 empanada de pino al horno (con ají)", "kcal": 655.5, "proteina_g": 27, "carbohidratos_g": 73.5, "grasa_g": 24, "azucares_g": 4.5, "fuente": "busqueda_web"},
+      {"nombre": "1 empanada de queso en masa de mil hojas", "kcal": 510, "proteina_g": 15, "carbohidratos_g": 40, "grasa_g": 32, "azucares_g": 2, "fuente": "busqueda_web"},
+      {"nombre": "2 jaleas proteicas Watts", "kcal": 84, "proteina_g": 20, "carbohidratos_g": 1, "grasa_g": 0, "azucares_g": 1, "fuente": "food-database"},
+      {"nombre": "1 yogurt Protein+ Soprole", "kcal": 105, "proteina_g": 10.2, "carbohidratos_g": 9.8, "grasa_g": 2.8, "azucares_g": 9.8, "fuente": "food-database"},
+      {"nombre": "1 porción membrillo cocido con stevia (sin azúcar)", "kcal": 85, "proteina_g": 0.4, "carbohidratos_g": 22, "grasa_g": 0.1, "azucares_g": 13, "fuente": "estimado"},
+      {"nombre": "1 Coca-Cola Zero lata (350cc)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"},
+      {"nombre": "1/2 barra de proteína", "kcal": 106, "proteina_g": 10.3, "carbohidratos_g": 5.7, "grasa_g": 4.05, "azucares_g": 0.7, "fuente": "food-database"}
+    ],
+    "totales": {"kcal": 1546.5, "proteina_g": 82.9, "carbohidratos_g": 152.2, "grasa_g": 62.95, "azucares_g": 31},
+    "actividad": {"pasos": 4300, "detalle": [], "kcal_quemadas_total": 1749.7, "nota": "Descanso, no fue al gym. KCALQ = BMR(1625) + pasos_neto(124.7) + ejercicio(0)"}
   }
 ];
 const OBJETIVO_PROTEINA = 150;
@@ -190,7 +204,11 @@ const FOOD_DATABASE = [
   {"id": "papa_horno_180g", "nombre": "Papa al horno (con piel, sin materia grasa añadida)", "porcion": "180g (1 papa mediana)", "kcal": 167, "proteina_g": 3.8, "carbohidratos_g": 37.8, "grasa_g": 0.2, "azucares_g": 2.2, "origen": "busqueda_web"},
   {"id": "lomo_peruano_saltado", "nombre": "Lomo Peruano Saltado (con arroz y papas fritas)", "porcion": "1 porción restaurante (~120g lomo + 230g arroz + 80g papas fritas)", "kcal": 937, "proteina_g": 47, "carbohidratos_g": 113, "grasa_g": 32, "azucares_g": 8, "origen": "busqueda_web"},
   {"id": "hamburguesa_pan_carne_tocino", "nombre": "Hamburguesa (pan, carne, ketchup, mayonesa, tocino)", "porcion": "1 unidad estándar", "kcal": 700, "proteina_g": 34, "carbohidratos_g": 45, "grasa_g": 35, "azucares_g": 10, "origen": "estimado"},
-  {"id": "piscola_con_coca_zero", "nombre": "Piscola con Coca-Cola Zero (50ml pisco + 200ml Coca Zero)", "porcion": "250ml (1 vaso estándar)", "kcal": 110, "proteina_g": 0, "carbohidratos_g": 0.1, "grasa_g": 0, "azucares_g": 0, "origen": "busqueda_web"}
+  {"id": "piscola_con_coca_zero", "nombre": "Piscola con Coca-Cola Zero (50ml pisco + 200ml Coca Zero)", "porcion": "250ml (1 vaso estándar)", "kcal": 110, "proteina_g": 0, "carbohidratos_g": 0.1, "grasa_g": 0, "azucares_g": 0, "origen": "busqueda_web"},
+  {"id": "empanada_pino_horno", "nombre": "Empanada de pino al horno", "porcion": "180g (1 unidad)", "kcal": 437, "proteina_g": 18, "carbohidratos_g": 49, "grasa_g": 16, "azucares_g": 3, "origen": "busqueda_web"},
+  {"id": "empanada_queso_hoja", "nombre": "Empanada de queso en masa de mil hojas (hojaldre)", "porcion": "130g (1 unidad)", "kcal": 510, "proteina_g": 15, "carbohidratos_g": 40, "grasa_g": 32, "azucares_g": 2, "origen": "busqueda_web"},
+  {"id": "membrillo_cocido_stevia", "nombre": "Membrillo cocido con stevia (sin azúcar)", "porcion": "150g (1 porción)", "kcal": 85, "proteina_g": 0.4, "carbohidratos_g": 22, "grasa_g": 0.1, "azucares_g": 13, "origen": "estimado"},
+  {"id": "coca_cola_zero_lata_350ml", "nombre": "Coca-Cola Zero (lata)", "porcion": "350ml (1 lata)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "origen": "conocimiento_general"}
 ];
 // ==== FIN DATOS ====
 
