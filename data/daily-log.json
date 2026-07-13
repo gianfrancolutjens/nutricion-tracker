@@ -248,5 +248,86 @@
       "kcal_quemadas_total": 1906.4,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(281.4) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-07-12",
+    "items": [
+      {
+        "nombre": "1,5 empanada de pino al horno (con ají)",
+        "kcal": 655.5,
+        "proteina_g": 27,
+        "carbohidratos_g": 73.5,
+        "grasa_g": 24,
+        "azucares_g": 4.5,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 empanada de queso en masa de mil hojas",
+        "kcal": 510,
+        "proteina_g": 15,
+        "carbohidratos_g": 40,
+        "grasa_g": 32,
+        "azucares_g": 2,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "2 jaleas proteicas Watts",
+        "kcal": 84,
+        "proteina_g": 20,
+        "carbohidratos_g": 1,
+        "grasa_g": 0,
+        "azucares_g": 1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 yogurt Protein+ Soprole",
+        "kcal": 105,
+        "proteina_g": 10.2,
+        "carbohidratos_g": 9.8,
+        "grasa_g": 2.8,
+        "azucares_g": 9.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 porción membrillo cocido con stevia (sin azúcar)",
+        "kcal": 85,
+        "proteina_g": 0.4,
+        "carbohidratos_g": 22,
+        "grasa_g": 0.1,
+        "azucares_g": 13,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 Coca-Cola Zero lata (350cc)",
+        "kcal": 1,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.2,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1/2 barra de proteína",
+        "kcal": 106,
+        "proteina_g": 10.3,
+        "carbohidratos_g": 5.7,
+        "grasa_g": 4.05,
+        "azucares_g": 0.7,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1546.5,
+      "proteina_g": 82.9,
+      "carbohidratos_g": 152.2,
+      "grasa_g": 62.95,
+      "azucares_g": 31
+    },
+    "actividad": {
+      "pasos": 4300,
+      "detalle": [],
+      "kcal_quemadas_total": 1749.7,
+      "nota": "Descanso, no fue al gym. KCALQ = BMR(1625) + pasos_neto(124.7) + ejercicio(0)"
+    }
   }
 ]
