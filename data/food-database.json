@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -10,7 +10,6 @@
       "carbohidratos_g": 3,
       "grasa_g": 1.5,
       "azucares_g": 1,
-      "confianza": "alta",
       "origen": "foto"
     },
     {
@@ -22,7 +21,6 @@
       "carbohidratos_g": 11.4,
       "grasa_g": 8.1,
       "azucares_g": 1.4,
-      "confianza": "media",
       "origen": "foto"
     },
     {
@@ -34,7 +32,6 @@
       "carbohidratos_g": 0.5,
       "grasa_g": 0,
       "azucares_g": 0.5,
-      "confianza": "alta",
       "origen": "foto"
     },
     {
@@ -46,7 +43,6 @@
       "carbohidratos_g": 8.3,
       "grasa_g": 0.6,
       "azucares_g": 8.3,
-      "confianza": "media",
       "origen": "foto"
     },
     {
@@ -58,7 +54,6 @@
       "carbohidratos_g": 9.8,
       "grasa_g": 2.8,
       "azucares_g": 9.8,
-      "confianza": "alta",
       "origen": "foto"
     },
     {
@@ -70,7 +65,6 @@
       "carbohidratos_g": 9.8,
       "grasa_g": 9,
       "azucares_g": 8.6,
-      "confianza": "alta",
       "origen": "foto"
     },
     {
@@ -82,7 +76,6 @@
       "carbohidratos_g": 37,
       "grasa_g": 3,
       "azucares_g": 3,
-      "confianza": "estimado",
       "origen": "estimado"
     },
     {
@@ -94,7 +87,6 @@
       "carbohidratos_g": 0.5,
       "grasa_g": 7.5,
       "azucares_g": 0.5,
-      "confianza": "estimado",
       "origen": "estimado"
     },
     {
@@ -106,7 +98,6 @@
       "carbohidratos_g": 0.5,
       "grasa_g": 0,
       "azucares_g": 0,
-      "confianza": "estimado",
       "origen": "estimado"
     },
     {
@@ -118,7 +109,6 @@
       "carbohidratos_g": 37,
       "grasa_g": 0,
       "azucares_g": 37,
-      "confianza": "alta",
       "origen": "busqueda_web"
     },
     {
@@ -130,7 +120,6 @@
       "carbohidratos_g": 0,
       "grasa_g": 16,
       "azucares_g": 0,
-      "confianza": "estimado",
       "origen": "estimado"
     },
     {
@@ -142,7 +131,6 @@
       "carbohidratos_g": 43,
       "grasa_g": 0.4,
       "azucares_g": 0.1,
-      "confianza": "estimado",
       "origen": "estimado"
     },
     {
@@ -154,7 +142,6 @@
       "carbohidratos_g": 0.2,
       "grasa_g": 0,
       "azucares_g": 0,
-      "confianza": "alta",
       "origen": "conocimiento_general"
     },
     {
@@ -166,7 +153,6 @@
       "carbohidratos_g": 5.2,
       "grasa_g": 16.5,
       "azucares_g": 1.8,
-      "confianza": "estimado",
       "origen": "busqueda_web"
     },
     {
@@ -178,7 +164,6 @@
       "carbohidratos_g": 37.8,
       "grasa_g": 0.2,
       "azucares_g": 2.2,
-      "confianza": "estimado",
       "origen": "busqueda_web"
     },
     {
@@ -190,7 +175,6 @@
       "carbohidratos_g": 113,
       "grasa_g": 32,
       "azucares_g": 8,
-      "confianza": "estimado",
       "origen": "busqueda_web"
     },
     {
@@ -202,7 +186,6 @@
       "carbohidratos_g": 45,
       "grasa_g": 35,
       "azucares_g": 10,
-      "confianza": "estimado",
       "origen": "estimado"
     },
     {
@@ -214,8 +197,51 @@
       "carbohidratos_g": 0.1,
       "grasa_g": 0,
       "azucares_g": 0,
-      "confianza": "media",
       "origen": "busqueda_web"
+    },
+    {
+      "id": "empanada_pino_horno",
+      "nombre": "Empanada de pino al horno",
+      "porcion": "180g (1 unidad)",
+      "kcal": 437,
+      "proteina_g": 18,
+      "carbohidratos_g": 49,
+      "grasa_g": 16,
+      "azucares_g": 3,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "empanada_queso_hoja",
+      "nombre": "Empanada de queso en masa de mil hojas (hojaldre)",
+      "porcion": "130g (1 unidad)",
+      "kcal": 510,
+      "proteina_g": 15,
+      "carbohidratos_g": 40,
+      "grasa_g": 32,
+      "azucares_g": 2,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "membrillo_cocido_stevia",
+      "nombre": "Membrillo cocido con stevia (sin azúcar)",
+      "porcion": "150g (1 porción)",
+      "kcal": 85,
+      "proteina_g": 0.4,
+      "carbohidratos_g": 22,
+      "grasa_g": 0.1,
+      "azucares_g": 13,
+      "origen": "estimado"
+    },
+    {
+      "id": "coca_cola_zero_lata_350ml",
+      "nombre": "Coca-Cola Zero (lata)",
+      "porcion": "350ml (1 lata)",
+      "kcal": 1,
+      "proteina_g": 0,
+      "carbohidratos_g": 0.2,
+      "grasa_g": 0,
+      "azucares_g": 0,
+      "origen": "conocimiento_general"
     }
   ]
 }
