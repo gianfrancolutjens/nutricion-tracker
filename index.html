@@ -181,6 +181,22 @@ const DAILY_LOG = [
     ],
     "totales": {"kcal": 1546.5, "proteina_g": 82.9, "carbohidratos_g": 152.2, "grasa_g": 62.95, "azucares_g": 31},
     "actividad": {"pasos": 4300, "detalle": [], "kcal_quemadas_total": 1749.7, "nota": "Descanso, no fue al gym. KCALQ = BMR(1625) + pasos_neto(124.7) + ejercicio(0)"}
+  },
+  {
+    "fecha": "2026-07-13",
+    "items": [
+      {"nombre": "Combo Street Bowl Mixto (carne mechada+pollo a la plancha) + Salmón a la plancha + Palta", "kcal": 790, "proteina_g": 76, "carbohidratos_g": 45, "grasa_g": 32, "azucares_g": 13, "fuente": "food-database"},
+      {"nombre": "1 Coca-Cola Zero lata (350cc)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"},
+      {"nombre": "Café descafeinado con leche Not Milk (chorrito)", "kcal": 25, "proteina_g": 1.6, "carbohidratos_g": 1.5, "grasa_g": 1.5, "azucares_g": 1.5, "fuente": "food-database"},
+      {"nombre": "1 trutro entero de pollo al horno", "kcal": 406, "proteina_g": 55.7, "carbohidratos_g": 5.2, "grasa_g": 16.5, "azucares_g": 1.8, "fuente": "food-database"},
+      {"nombre": "1,5 papas al horno", "kcal": 250.5, "proteina_g": 5.7, "carbohidratos_g": 56.7, "grasa_g": 0.3, "azucares_g": 3.3, "fuente": "food-database"},
+      {"nombre": "1 yogurt Protein+ Soprole", "kcal": 105, "proteina_g": 10.2, "carbohidratos_g": 9.8, "grasa_g": 2.8, "azucares_g": 9.8, "fuente": "food-database"},
+      {"nombre": "2 jaleas proteicas Watts", "kcal": 84, "proteina_g": 20, "carbohidratos_g": 1.0, "grasa_g": 0, "azucares_g": 1.0, "fuente": "food-database"},
+      {"nombre": "1 jalea Regimel 1 caloría", "kcal": 2.5, "proteina_g": 0, "carbohidratos_g": 0.5, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"},
+      {"nombre": "1 Coca-Cola Zero lata (350cc)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"}
+    ],
+    "totales": {"kcal": 1665.0, "proteina_g": 169.2, "carbohidratos_g": 120.1, "grasa_g": 53.1, "azucares_g": 30.4},
+    "actividad": {"pasos": 4314, "detalle": [{"actividad": "Bicicleta (estática, moderada)", "duracion_min": 30, "intensidad": "moderada", "kcal_quemadas_neto": 168.8}, {"actividad": "Banda elástica", "duracion_min": 60, "intensidad": "baja", "kcal_quemadas_neto": 150.0}], "kcal_quemadas_total": 2068.9, "nota": "KCALQ = BMR(1625) + pasos_neto(125.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar) + banda_neta(150.0)"}
   }
 ];
 const OBJETIVO_PROTEINA = 150;
@@ -208,7 +224,9 @@ const FOOD_DATABASE = [
   {"id": "empanada_pino_horno", "nombre": "Empanada de pino al horno", "porcion": "180g (1 unidad)", "kcal": 437, "proteina_g": 18, "carbohidratos_g": 49, "grasa_g": 16, "azucares_g": 3, "origen": "busqueda_web"},
   {"id": "empanada_queso_hoja", "nombre": "Empanada de queso en masa de mil hojas (hojaldre)", "porcion": "130g (1 unidad)", "kcal": 510, "proteina_g": 15, "carbohidratos_g": 40, "grasa_g": 32, "azucares_g": 2, "origen": "busqueda_web"},
   {"id": "membrillo_cocido_stevia", "nombre": "Membrillo cocido con stevia (sin azúcar)", "porcion": "150g (1 porción)", "kcal": 85, "proteina_g": 0.4, "carbohidratos_g": 22, "grasa_g": 0.1, "azucares_g": 13, "origen": "estimado"},
-  {"id": "coca_cola_zero_lata_350ml", "nombre": "Coca-Cola Zero (lata)", "porcion": "350ml (1 lata)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "origen": "conocimiento_general"}
+  {"id": "coca_cola_zero_lata_350ml", "nombre": "Coca-Cola Zero (lata)", "porcion": "350ml (1 lata)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "origen": "conocimiento_general"},
+  {"id": "combo_street_bowl_mixto_salmon_palta", "nombre": "Combo Street Bowl Mixto (carne mechada+pollo a la plancha) + Salmón a la plancha + Palta", "porcion": "1 bowl (pedido Toteat, ~$17.280)", "kcal": 790, "proteina_g": 76, "carbohidratos_g": 45, "grasa_g": 32, "azucares_g": 13, "origen": "estimado"},
+  {"id": "cafe_descafeinado_notmilk", "nombre": "Café descafeinado con leche Not Milk (chorrito)", "porcion": "1 taza (~200ml café + ~30ml Not Milk)", "kcal": 25, "proteina_g": 1.6, "carbohidratos_g": 1.5, "grasa_g": 1.5, "azucares_g": 1.5, "origen": "estimado"}
 ];
 // ==== FIN DATOS ====
 
