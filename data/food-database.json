@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -242,6 +242,28 @@
       "grasa_g": 0,
       "azucares_g": 0,
       "origen": "conocimiento_general"
+    },
+    {
+      "id": "combo_street_bowl_mixto_salmon_palta",
+      "nombre": "Combo Street Bowl Mixto (carne mechada+pollo a la plancha) + Salmón a la plancha + Palta",
+      "porcion": "1 bowl (pedido Toteat, ~$17.280)",
+      "kcal": 790,
+      "proteina_g": 76,
+      "carbohidratos_g": 45,
+      "grasa_g": 32,
+      "azucares_g": 13,
+      "origen": "estimado"
+    },
+    {
+      "id": "cafe_descafeinado_notmilk",
+      "nombre": "Café descafeinado con leche Not Milk (chorrito)",
+      "porcion": "1 taza (~200ml café + ~30ml Not Milk)",
+      "kcal": 25,
+      "proteina_g": 1.6,
+      "carbohidratos_g": 1.5,
+      "grasa_g": 1.5,
+      "azucares_g": 1.5,
+      "origen": "estimado"
     }
   ]
 }
