@@ -329,5 +329,117 @@
       "kcal_quemadas_total": 1749.7,
       "nota": "Descanso, no fue al gym. KCALQ = BMR(1625) + pasos_neto(124.7) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-07-13",
+    "items": [
+      {
+        "nombre": "Combo Street Bowl Mixto (carne mechada+pollo a la plancha) + Salmón a la plancha + Palta",
+        "kcal": 790,
+        "proteina_g": 76,
+        "carbohidratos_g": 45,
+        "grasa_g": 32,
+        "azucares_g": 13,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 Coca-Cola Zero lata (350cc)",
+        "kcal": 1,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.2,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Café descafeinado con leche Not Milk (chorrito)",
+        "kcal": 25,
+        "proteina_g": 1.6,
+        "carbohidratos_g": 1.5,
+        "grasa_g": 1.5,
+        "azucares_g": 1.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trutro entero de pollo al horno",
+        "kcal": 406,
+        "proteina_g": 55.7,
+        "carbohidratos_g": 5.2,
+        "grasa_g": 16.5,
+        "azucares_g": 1.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1,5 papas al horno",
+        "kcal": 250.5,
+        "proteina_g": 5.7,
+        "carbohidratos_g": 56.7,
+        "grasa_g": 0.3,
+        "azucares_g": 3.3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 yogurt Protein+ Soprole",
+        "kcal": 105,
+        "proteina_g": 10.2,
+        "carbohidratos_g": 9.8,
+        "grasa_g": 2.8,
+        "azucares_g": 9.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 jaleas proteicas Watts",
+        "kcal": 84,
+        "proteina_g": 20,
+        "carbohidratos_g": 1.0,
+        "grasa_g": 0,
+        "azucares_g": 1.0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea Regimel 1 caloría",
+        "kcal": 2.5,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 Coca-Cola Zero lata (350cc)",
+        "kcal": 1,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.2,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1665.0,
+      "proteina_g": 169.2,
+      "carbohidratos_g": 120.1,
+      "grasa_g": 53.1,
+      "azucares_g": 30.4
+    },
+    "actividad": {
+      "pasos": 4314,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 30,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 168.8
+        },
+        {
+          "actividad": "Banda elástica",
+          "duracion_min": 60,
+          "intensidad": "baja",
+          "kcal_quemadas_neto": 150.0
+        }
+      ],
+      "kcal_quemadas_total": 2068.9,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(125.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar) + banda_neta(150.0)"
+    }
   }
 ]
