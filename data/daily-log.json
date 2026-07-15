@@ -441,5 +441,75 @@
       "kcal_quemadas_total": 2068.9,
       "nota": "KCALQ = BMR(1625) + pasos_neto(125.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar) + banda_neta(150.0)"
     }
+  },
+  {
+    "fecha": "2026-07-14",
+    "items": [
+      {
+        "nombre": "Pollo al horno con 1 papa",
+        "kcal": 573,
+        "proteina_g": 59.5,
+        "carbohidratos_g": 43.0,
+        "grasa_g": 16.7,
+        "azucares_g": 4.0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 yogurt blanco + 1 scoop proteína",
+        "kcal": 414,
+        "proteina_g": 37.8,
+        "carbohidratos_g": 22.6,
+        "grasa_g": 19.5,
+        "azucares_g": 18.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 barra de proteína (chocolate)",
+        "kcal": 212,
+        "proteina_g": 20.6,
+        "carbohidratos_g": 11.4,
+        "grasa_g": 8.1,
+        "azucares_g": 1.4,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Pollo al horno con 1,5 papa",
+        "kcal": 656.5,
+        "proteina_g": 61.4,
+        "carbohidratos_g": 61.9,
+        "grasa_g": 16.8,
+        "azucares_g": 5.1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 jaleas proteicas Watts",
+        "kcal": 84,
+        "proteina_g": 20,
+        "carbohidratos_g": 1.0,
+        "grasa_g": 0,
+        "azucares_g": 1.0,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1939.5,
+      "proteina_g": 199.3,
+      "carbohidratos_g": 139.9,
+      "grasa_g": 61.1,
+      "azucares_g": 29.7
+    },
+    "actividad": {
+      "pasos": 4900,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 30,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 168.8
+        }
+      ],
+      "kcal_quemadas_total": 1935.9,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(142.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar)"
+    }
   }
 ]
