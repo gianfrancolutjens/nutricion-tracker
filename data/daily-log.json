@@ -586,14 +586,41 @@
         "grasa_g": 0,
         "azucares_g": 0.5,
         "fuente": "food-database"
+      },
+      {
+        "nombre": "4 empanaditas de queso fritas (KFC)",
+        "kcal": 217.3,
+        "proteina_g": 6.7,
+        "carbohidratos_g": 37.9,
+        "grasa_g": 4.4,
+        "azucares_g": 1.3,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "5 presas de pollo frito Original Recipe (KFC, mix pechuga/muslo/ala)",
+        "kcal": 1400,
+        "proteina_g": 110,
+        "carbohidratos_g": 40,
+        "grasa_g": 85,
+        "azucares_g": 2.5,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 Ron Cola (ron + Coca-Cola Zero)",
+        "kcal": 97,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "estimado"
       }
     ],
     "totales": {
-      "kcal": 1427.0,
-      "proteina_g": 131.5,
-      "carbohidratos_g": 144.5,
-      "grasa_g": 33.0,
-      "azucares_g": 36.8
+      "kcal": 3141.3,
+      "proteina_g": 248.2,
+      "carbohidratos_g": 222.9,
+      "grasa_g": 122.4,
+      "azucares_g": 40.6
     },
     "actividad": {
       "pasos": 4800,
