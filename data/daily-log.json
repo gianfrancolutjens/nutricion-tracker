@@ -701,6 +701,11 @@
       "grasa_g": 140.9,
       "azucares_g": 32.9
     },
-    "actividad": null
+    "actividad": {
+      "pasos": 4600,
+      "detalle": [],
+      "kcal_quemadas_total": 1758.4,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(133.4) + ejercicio(0)"
+    }
   }
 ]
