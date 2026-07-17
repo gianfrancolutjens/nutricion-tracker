@@ -67,6 +67,19 @@
   .empty{color:var(--muted); font-size:14px; padding:24px 0; text-align:center;}
   .chart-wrap{position:relative; height:300px;}
   canvas{max-height:260px;}
+  .view-toggle{
+    display:flex; justify-content:center; gap:8px; margin:0 0 20px;
+  }
+  .view-toggle button{
+    background:var(--panel); color:var(--muted); border:1px solid var(--panel-border);
+    border-radius:8px; padding:8px 22px; font-size:13px; font-weight:600;
+    letter-spacing:.03em; cursor:pointer; transition:all .15s ease;
+    font-family:inherit;
+  }
+  .view-toggle button:hover{ color:var(--text); border-color:#3a4051; }
+  .view-toggle button.active{
+    background:var(--kcal); color:#1a1206; border-color:var(--kcal);
+  }
 </style>
 </head>
 <body>
@@ -75,6 +88,11 @@
     <h1>NUTRICIÓN GIANFRANCO</h1>
     <div class="sub" id="generado">Generado: —</div>
   </header>
+
+  <div class="view-toggle">
+    <button id="btn-diario" class="active" onclick="setView('diario')">Diario</button>
+    <button id="btn-semanal" onclick="setView('semanal')">Semanal</button>
+  </div>
 
   <div class="grid">
     <div class="panel kcal">
@@ -93,13 +111,13 @@
 
   <div class="table-panel collapsed" id="panel-diario">
     <div class="collapsible-header" onclick="document.getElementById('panel-diario').classList.toggle('collapsed')">
-      <h2 style="margin:0;">Registro diario</h2>
+      <h2 style="margin:0;" id="titulo-tabla">Registro diario</h2>
       <span class="chevron">▼</span>
     </div>
     <div class="collapsible-body">
       <table id="tabla">
         <thead>
-          <tr><th>Fecha</th><th>Kcal</th><th>KcalQ</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Detalle</th></tr>
+          <tr id="tabla-head-row"><th id="th-fecha">Fecha</th><th>Kcal</th><th>KcalQ</th><th>Prot (g)</th><th>Carb (g)</th><th>Azúcar (g)</th><th>Grasa (g)</th><th>Detalle</th></tr>
         </thead>
         <tbody id="tabla-body"></tbody>
       </table>
@@ -285,17 +303,72 @@ function fmtFecha(f){
   return d.toLocaleDateString('es-CL', {day:'2-digit', month:'2-digit'});
 }
 
+function getISOWeek(fecha){
+  const date = new Date(fecha + 'T00:00:00');
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return { year: d.getUTCFullYear(), week: weekNo };
+}
+
+function round1(n){ return Math.round(n * 10) / 10; }
+
+function buildWeekly(days){
+  const map = new Map();
+  const order = [];
+  days.forEach(d => {
+    const { year, week } = getISOWeek(d.fecha);
+    const key = year + '-W' + week;
+    if (!map.has(key)){
+      map.set(key, {
+        key, year, week, fechas: [],
+        totales: { kcal:0, proteina_g:0, carbohidratos_g:0, grasa_g:0, azucares_g:0 },
+        kcal_quemadas_total: 0
+      });
+      order.push(key);
+    }
+    const w = map.get(key);
+    w.fechas.push(d.fecha);
+    w.totales.kcal += d.totales.kcal;
+    w.totales.proteina_g += d.totales.proteina_g;
+    w.totales.carbohidratos_g += d.totales.carbohidratos_g;
+    w.totales.grasa_g += d.totales.grasa_g;
+    w.totales.azucares_g += d.totales.azucares_g;
+    w.kcal_quemadas_total += (d.actividad && d.actividad.kcal_quemadas_total) || 0;
+  });
+  return order.map(k => {
+    const w = map.get(k);
+    w.totales.kcal = round1(w.totales.kcal);
+    w.totales.proteina_g = round1(w.totales.proteina_g);
+    w.totales.carbohidratos_g = round1(w.totales.carbohidratos_g);
+    w.totales.grasa_g = round1(w.totales.grasa_g);
+    w.totales.azucares_g = round1(w.totales.azucares_g);
+    w.kcal_quemadas_total = round1(w.kcal_quemadas_total);
+    return w;
+  });
+}
+
+const weekly = buildWeekly(sorted);
+
 const gridColor = '#262b36';
 const tickColor = '#8b93a3';
+const chartInstances = {};
+
+function destroyChart(id){
+  if (chartInstances[id]){ chartInstances[id].destroy(); chartInstances[id] = null; }
+}
 
 function baseLineChart(canvasId, title, labels, data, color, extraDatasets){
+  destroyChart(canvasId);
   const datasets = [{
     label: '', data, borderColor: color,
     backgroundColor: color + '22', fill: true, tension: 0.3,
     pointRadius: 3, pointBackgroundColor: color
   }];
   if (extraDatasets) datasets.push(...extraDatasets);
-  return new Chart(document.getElementById(canvasId), {
+  chartInstances[canvasId] = new Chart(document.getElementById(canvasId), {
     type: 'line',
     data: { labels, datasets },
     options: {
@@ -313,23 +386,9 @@ function baseLineChart(canvasId, title, labels, data, color, extraDatasets){
   });
 }
 
-if (sorted.length === 0){
-  document.getElementById('empty-tabla').style.display = 'block';
-  const titles = { chartKcal: 'Calorías quemadas vs Ingeridas', chartProt: 'Consumo Proteínas', chartCarb: 'Consumo Carbohidratos', chartSugar: 'Consumo Azúcares' };
-  ['chartKcal','chartProt','chartCarb','chartSugar'].forEach(id=>{
-    baseLineChart(id, titles[id], [], []);
-  });
-} else {
-  const last = sorted[sorted.length - 1];
-
-  const labels = sorted.map(d => fmtFecha(d.fecha));
-  const kcal = sorted.map(d => d.totales.kcal);
-  const prot = sorted.map(d => d.totales.proteina_g);
-  const carb = sorted.map(d => d.totales.carbohidratos_g);
-  const sugar = sorted.map(d => d.totales.azucares_g);
-  const quemadas = sorted.map(d => (d.actividad && d.actividad.kcal_quemadas_total) || 0);
-
-  new Chart(document.getElementById('chartKcal'), {
+function kcalChart(labels, kcal, quemadas, suffix){
+  destroyChart('chartKcal');
+  chartInstances['chartKcal'] = new Chart(document.getElementById('chartKcal'), {
     type: 'bar',
     data: { labels, datasets: [
       { type: 'bar', label: 'Quemadas', data: quemadas,
@@ -342,7 +401,7 @@ if (sorted.length === 0){
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
-        title: { display: true, text: 'Calorías quemadas vs Ingeridas', color: '#ffffff', font: { weight: 'bold', size: 15 }, align: 'center', padding: { bottom: 14 } },
+        title: { display: true, text: 'Calorías quemadas vs Ingeridas' + suffix, color: '#ffffff', font: { weight: 'bold', size: 15 }, align: 'center', padding: { bottom: 14 } },
         legend: { display: true, position: 'bottom', labels: { color: '#e8eaed', boxWidth: 12, font: {size: 11} } }
       },
       scales: {
@@ -351,6 +410,28 @@ if (sorted.length === 0){
       }
     }
   });
+}
+
+function renderEmptyCharts(){
+  const titles = { chartKcal: 'Calorías quemadas vs Ingeridas', chartProt: 'Consumo Proteínas', chartCarb: 'Consumo Carbohidratos', chartSugar: 'Consumo Azúcares' };
+  destroyChart('chartKcal');
+  ['chartKcal','chartProt','chartCarb','chartSugar'].forEach(id=>{
+    baseLineChart(id, titles[id], [], []);
+  });
+}
+
+function renderDiario(){
+  document.getElementById('titulo-tabla').textContent = 'Registro diario';
+  document.getElementById('th-fecha').textContent = 'Fecha';
+
+  const labels = sorted.map(d => fmtFecha(d.fecha));
+  const kcal = sorted.map(d => d.totales.kcal);
+  const prot = sorted.map(d => d.totales.proteina_g);
+  const carb = sorted.map(d => d.totales.carbohidratos_g);
+  const sugar = sorted.map(d => d.totales.azucares_g);
+  const quemadas = sorted.map(d => (d.actividad && d.actividad.kcal_quemadas_total) || 0);
+
+  kcalChart(labels, kcal, quemadas, '');
   baseLineChart('chartProt', 'Consumo Proteínas', labels, prot, '#56ccf2', [
     { label: 'Objetivo (150g)', data: labels.map(() => OBJETIVO_PROTEINA),
       borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
@@ -365,6 +446,7 @@ if (sorted.length === 0){
   ]);
 
   const tbody = document.getElementById('tabla-body');
+  tbody.innerHTML = '';
   [...sorted].reverse().forEach(d => {
     const tr = document.createElement('tr');
     const itemsStr = (d.items || []).map(i => i.nombre).join(', ');
@@ -372,6 +454,69 @@ if (sorted.length === 0){
     tr.innerHTML = `<td>${d.fecha}</td><td>${d.totales.kcal}</td><td>${kcalQ}</td><td>${d.totales.proteina_g}</td><td>${d.totales.carbohidratos_g}</td><td>${d.totales.azucares_g}</td><td>${d.totales.grasa_g}</td><td class="items">${itemsStr}</td>`;
     tbody.appendChild(tr);
   });
+}
+
+function renderSemanal(){
+  document.getElementById('titulo-tabla').textContent = 'Registro semanal';
+  document.getElementById('th-fecha').textContent = 'Semana';
+
+  const labels = weekly.map(w => 'Sem ' + w.week);
+  const kcal = weekly.map(w => w.totales.kcal);
+  const prot = weekly.map(w => w.totales.proteina_g);
+  const carb = weekly.map(w => w.totales.carbohidratos_g);
+  const sugar = weekly.map(w => w.totales.azucares_g);
+  const quemadas = weekly.map(w => w.kcal_quemadas_total);
+
+  // Objetivos escalados por N° de días registrados en cada semana (suma comparable)
+  const objProt = weekly.map(w => round1(OBJETIVO_PROTEINA * w.fechas.length));
+  const objCarb = weekly.map(w => round1(OBJETIVO_CARBOHIDRATOS * w.fechas.length));
+  const objAzucar = weekly.map(w => round1(OBJETIVO_AZUCAR * w.fechas.length));
+
+  kcalChart(labels, kcal, quemadas, ' (semanal)');
+  baseLineChart('chartProt', 'Consumo Proteínas (semanal)', labels, prot, '#56ccf2', [
+    { label: 'Objetivo semana', data: objProt,
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+  baseLineChart('chartCarb', 'Consumo Carbohidratos (semanal)', labels, carb, '#bb6bd9', [
+    { label: 'Objetivo semana', data: objCarb,
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+  baseLineChart('chartSugar', 'Consumo Azúcares (semanal)', labels, sugar, '#eb5757', [
+    { label: 'Tope semana', data: objAzucar,
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+
+  const tbody = document.getElementById('tabla-body');
+  tbody.innerHTML = '';
+  [...weekly].reverse().forEach(w => {
+    const tr = document.createElement('tr');
+    const fechasOrdenadas = [...w.fechas].sort();
+    const rango = fechasOrdenadas.length > 1
+      ? fmtFecha(fechasOrdenadas[0]) + ' – ' + fmtFecha(fechasOrdenadas[fechasOrdenadas.length-1])
+      : fmtFecha(fechasOrdenadas[0]);
+    const detalle = rango + ' (' + w.fechas.length + (w.fechas.length === 1 ? ' día' : ' días') + ')';
+    tr.innerHTML = `<td>Sem ${w.week}</td><td>${w.totales.kcal}</td><td>${w.kcal_quemadas_total}</td><td>${w.totales.proteina_g}</td><td>${w.totales.carbohidratos_g}</td><td>${w.totales.azucares_g}</td><td>${w.totales.grasa_g}</td><td class="items">${detalle}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+let currentView = 'diario';
+function setView(mode){
+  currentView = mode;
+  document.getElementById('btn-diario').classList.toggle('active', mode === 'diario');
+  document.getElementById('btn-semanal').classList.toggle('active', mode === 'semanal');
+  if (sorted.length === 0){
+    renderEmptyCharts();
+    return;
+  }
+  if (mode === 'semanal') renderSemanal(); else renderDiario();
+}
+
+if (sorted.length === 0){
+  document.getElementById('empty-tabla').style.display = 'block';
+  renderEmptyCharts();
+} else {
+  renderDiario();
 }
 
 const tbodyProductos = document.getElementById('tabla-productos-body');
