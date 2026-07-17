@@ -635,5 +635,72 @@
       "kcal_quemadas_total": 1933.0,
       "nota": "KCALQ = BMR(1625) + pasos_neto(139.2) + bici_neta(168.8, MET=5.5 estimado, sin calibrar). Los 10min de caminata en cinta ya están reflejados en los 4800 pasos, no se suman aparte."
     }
+  },
+  {
+    "fecha": "2026-07-16",
+    "items": [
+      {
+        "nombre": "1 yogurt Protein Loncoleche",
+        "kcal": 91,
+        "proteina_g": 12,
+        "carbohidratos_g": 8.3,
+        "grasa_g": 0.6,
+        "azucares_g": 8.3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "7 presas de pollo frito Original Recipe (KFC, mix)",
+        "kcal": 1960,
+        "proteina_g": 154,
+        "carbohidratos_g": 56,
+        "grasa_g": 119,
+        "azucares_g": 3.5,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 empanaditas de queso fritas (KFC)",
+        "kcal": 108.66,
+        "proteina_g": 3.34,
+        "carbohidratos_g": 18.92,
+        "grasa_g": 2.2,
+        "azucares_g": 0.6,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 helado Mega Frambuesa (Nestlé Savory)",
+        "kcal": 282,
+        "proteina_g": 1.8,
+        "carbohidratos_g": 25.7,
+        "grasa_g": 19.1,
+        "azucares_g": 20,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "2 Coca-Cola Zero lata (350cc)",
+        "kcal": 2,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.4,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2485.7,
+      "proteina_g": 181.1,
+      "carbohidratos_g": 109.8,
+      "grasa_g": 140.9,
+      "azucares_g": 32.9
+    },
+    "actividad": null
   }
 ]
