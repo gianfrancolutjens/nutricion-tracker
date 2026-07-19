@@ -214,7 +214,7 @@ const DAILY_LOG = [
       {"nombre": "1 Coca-Cola Zero lata (350cc)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"}
     ],
     "totales": {"kcal": 1665.0, "proteina_g": 169.2, "carbohidratos_g": 120.1, "grasa_g": 53.1, "azucares_g": 30.4},
-    "actividad": {"pasos": 4314, "detalle": [{"actividad": "Bicicleta (estática, moderada)", "duracion_min": 30, "intensidad": "moderada", "kcal_quemadas_neto": 168.8}, {"actividad": "Banda elástica", "duracion_min": 60, "intensidad": "baja", "kcal_quemadas_neto": 150.0}], "kcal_quemadas_total": 2068.9, "nota": "KCALQ = BMR(1625) + pasos_neto(125.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar) + banda_neta(150.0)"}
+    "actividad": {"pasos": 4314, "detalle": [{"actividad": "Bicicleta (estática, moderada)", "duracion_min": 30, "intensidad": "moderada", "kcal_quemadas_neto": 146.1}, {"actividad": "Banda elástica", "duracion_min": 60, "intensidad": "baja", "kcal_quemadas_neto": 150.0}], "kcal_quemadas_total": 2046.2, "nota": "KCALQ = BMR(1625) + pasos_neto(125.1) + Bicicleta(146.1) + Banda elástica(150.0). [Recalibrado 2026-07-13: bici ahora MET=4.8972 en base a dato real de maquina (20min=120kcal)]"}
   },
   {
     "fecha": "2026-07-14",
@@ -226,7 +226,7 @@ const DAILY_LOG = [
       {"nombre": "2 jaleas proteicas Watts", "kcal": 84, "proteina_g": 20, "carbohidratos_g": 1.0, "grasa_g": 0, "azucares_g": 1.0, "fuente": "food-database"}
     ],
     "totales": {"kcal": 1939.5, "proteina_g": 199.3, "carbohidratos_g": 139.9, "grasa_g": 61.1, "azucares_g": 29.7},
-    "actividad": {"pasos": 4900, "detalle": [{"actividad": "Bicicleta (estática, moderada)", "duracion_min": 30, "intensidad": "moderada", "kcal_quemadas_neto": 168.8}], "kcal_quemadas_total": 1935.9, "nota": "KCALQ = BMR(1625) + pasos_neto(142.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar)"}
+    "actividad": {"pasos": 4900, "detalle": [{"actividad": "Bicicleta (estática, moderada)", "duracion_min": 30, "intensidad": "moderada", "kcal_quemadas_neto": 146.1}], "kcal_quemadas_total": 1913.2, "nota": "KCALQ = BMR(1625) + pasos_neto(142.1) + Bicicleta(146.1). [Recalibrado 2026-07-14: bici ahora MET=4.8972 en base a dato real de maquina (20min=120kcal)]"}
   },
   {
     "fecha": "2026-07-15",
@@ -244,7 +244,7 @@ const DAILY_LOG = [
       {"nombre": "1 Ron Cola (ron + Coca-Cola Zero)", "kcal": 97, "proteina_g": 0, "carbohidratos_g": 0.5, "grasa_g": 0, "azucares_g": 0, "fuente": "estimado"}
     ],
     "totales": {"kcal": 3141.3, "proteina_g": 248.2, "carbohidratos_g": 222.9, "grasa_g": 122.4, "azucares_g": 40.6},
-    "actividad": {"pasos": 4800, "detalle": [{"actividad": "Bicicleta (estática, moderada)", "duracion_min": 30, "intensidad": "moderada", "kcal_quemadas_neto": 168.8}], "kcal_quemadas_total": 1933.0, "nota": "KCALQ = BMR(1625) + pasos_neto(139.2) + bici_neta(168.8, MET=5.5 estimado, sin calibrar). Los 10min de caminata en cinta ya están reflejados en los 4800 pasos, no se suman aparte."}
+    "actividad": {"pasos": 4800, "detalle": [{"actividad": "Bicicleta (estática, moderada)", "duracion_min": 30, "intensidad": "moderada", "kcal_quemadas_neto": 146.1}], "kcal_quemadas_total": 1910.3, "nota": "KCALQ = BMR(1625) + pasos_neto(139.2) + Bicicleta(146.1). [Recalibrado 2026-07-15: bici ahora MET=4.8972 en base a dato real de maquina (20min=120kcal)]"}
   },
   {
     "fecha": "2026-07-16",
@@ -287,7 +287,7 @@ const DAILY_LOG = [
       {"nombre": "1 Coca-Cola Zero lata (350cc)", "kcal": 1, "proteina_g": 0, "carbohidratos_g": 0.2, "grasa_g": 0, "azucares_g": 0, "fuente": "food-database"}
     ],
     "totales": {"kcal": 2037, "proteina_g": 151.6, "carbohidratos_g": 134.0, "grasa_g": 82.2, "azucares_g": 46.3},
-    "actividad": null
+    "actividad": {"pasos": 5461, "detalle": [{"actividad": "Elíptica", "duracion_min": 20, "intensidad": "moderada", "kcal_quemadas_neto": 100.0}, {"actividad": "Bicicleta (estática, moderada)", "duracion_min": 20, "intensidad": "moderada", "kcal_quemadas_neto": 97.4}], "kcal_quemadas_total": 1980.8, "nota": "KCALQ = BMR(1625) + pasos_neto(158.4) + eliptica_neta(100.0) + bici_neta(97.4, MET=4.8972 recien calibrado con dato real de maquina: 20min=120kcal)"}
   }
 ];
 const OBJETIVO_PROTEINA = 150;
