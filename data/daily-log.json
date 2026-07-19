@@ -806,5 +806,81 @@
       "kcal_quemadas_total": 1683.0,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(58.0) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-07-18",
+    "items": [
+      {
+        "nombre": "1 hallulla con mantequilla, jamón de pavo y queso (2 láminas c/u)",
+        "kcal": 457,
+        "proteina_g": 22.0,
+        "carbohidratos_g": 38.2,
+        "grasa_g": 24.5,
+        "azucares_g": 2.7,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 café con leche Not Milk",
+        "kcal": 25,
+        "proteina_g": 1.6,
+        "carbohidratos_g": 1.5,
+        "grasa_g": 1.5,
+        "azucares_g": 1.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "300g lomo a la parrilla con papas fritas",
+        "kcal": 975,
+        "proteina_g": 100,
+        "carbohidratos_g": 42,
+        "grasa_g": 43,
+        "azucares_g": 0.5,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche",
+        "kcal": 182,
+        "proteina_g": 24,
+        "carbohidratos_g": 16.6,
+        "grasa_g": 1.2,
+        "azucares_g": 16.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 Ron Cola (ron + Coca-Cola Zero)",
+        "kcal": 97,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "100g torta Selva Negra",
+        "kcal": 300,
+        "proteina_g": 4,
+        "carbohidratos_g": 35,
+        "grasa_g": 12,
+        "azucares_g": 25,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 Coca-Cola Zero lata (350cc)",
+        "kcal": 1,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.2,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2037,
+      "proteina_g": 151.6,
+      "carbohidratos_g": 134.0,
+      "grasa_g": 82.2,
+      "azucares_g": 46.3
+    },
+    "actividad": null
   }
 ]
