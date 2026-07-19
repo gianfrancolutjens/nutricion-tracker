@@ -429,7 +429,7 @@
           "actividad": "Bicicleta (estática, moderada)",
           "duracion_min": 30,
           "intensidad": "moderada",
-          "kcal_quemadas_neto": 168.8
+          "kcal_quemadas_neto": 146.1
         },
         {
           "actividad": "Banda elástica",
@@ -438,8 +438,8 @@
           "kcal_quemadas_neto": 150.0
         }
       ],
-      "kcal_quemadas_total": 2068.9,
-      "nota": "KCALQ = BMR(1625) + pasos_neto(125.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar) + banda_neta(150.0)"
+      "kcal_quemadas_total": 2046.2,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(125.1) + Bicicleta(146.1) + Banda elástica(150.0). [Recalibrado 2026-07-13: bici ahora MET=4.8972 en base a dato real de maquina (20min=120kcal)]"
     }
   },
   {
@@ -505,11 +505,11 @@
           "actividad": "Bicicleta (estática, moderada)",
           "duracion_min": 30,
           "intensidad": "moderada",
-          "kcal_quemadas_neto": 168.8
+          "kcal_quemadas_neto": 146.1
         }
       ],
-      "kcal_quemadas_total": 1935.9,
-      "nota": "KCALQ = BMR(1625) + pasos_neto(142.1) + bici_neta(168.8, MET=5.5 estimado, sin calibrar)"
+      "kcal_quemadas_total": 1913.2,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(142.1) + Bicicleta(146.1). [Recalibrado 2026-07-14: bici ahora MET=4.8972 en base a dato real de maquina (20min=120kcal)]"
     }
   },
   {
@@ -629,11 +629,11 @@
           "actividad": "Bicicleta (estática, moderada)",
           "duracion_min": 30,
           "intensidad": "moderada",
-          "kcal_quemadas_neto": 168.8
+          "kcal_quemadas_neto": 146.1
         }
       ],
-      "kcal_quemadas_total": 1933.0,
-      "nota": "KCALQ = BMR(1625) + pasos_neto(139.2) + bici_neta(168.8, MET=5.5 estimado, sin calibrar). Los 10min de caminata en cinta ya están reflejados en los 4800 pasos, no se suman aparte."
+      "kcal_quemadas_total": 1910.3,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(139.2) + Bicicleta(146.1). [Recalibrado 2026-07-15: bici ahora MET=4.8972 en base a dato real de maquina (20min=120kcal)]"
     }
   },
   {
@@ -881,6 +881,24 @@
       "grasa_g": 82.2,
       "azucares_g": 46.3
     },
-    "actividad": null
+    "actividad": {
+      "pasos": 5461,
+      "detalle": [
+        {
+          "actividad": "Elíptica",
+          "duracion_min": 20,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 100.0
+        },
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 20,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 97.4
+        }
+      ],
+      "kcal_quemadas_total": 1980.8,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(158.4) + eliptica_neta(100.0) + bici_neta(97.4, MET=4.8972 recien calibrado con dato real de maquina: 20min=120kcal)"
+    }
   }
 ]
