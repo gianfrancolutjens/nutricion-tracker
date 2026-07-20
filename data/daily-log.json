@@ -900,5 +900,111 @@
       "kcal_quemadas_total": 1980.8,
       "nota": "KCALQ = BMR(1625) + pasos_neto(158.4) + eliptica_neta(100.0) + bici_neta(97.4, MET=4.8972 recien calibrado con dato real de maquina: 20min=120kcal)"
     }
+  },
+  {
+    "fecha": "2026-07-19",
+    "items": [
+      {
+        "nombre": "1 hallulla",
+        "kcal": 212,
+        "proteina_g": 6.8,
+        "carbohidratos_g": 37.2,
+        "grasa_g": 4,
+        "azucares_g": 2,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 trutro entero de pollo al horno con 1 cucharada de mayonesa",
+        "kcal": 500,
+        "proteina_g": 55.8,
+        "carbohidratos_g": 5.6,
+        "grasa_g": 26.8,
+        "azucares_g": 2.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 Coca-Cola Zero lata (350cc)",
+        "kcal": 2,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.4,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2/3 lata de piña Kem en almíbar (~200g)",
+        "kcal": 130,
+        "proteina_g": 0.8,
+        "carbohidratos_g": 30.8,
+        "grasa_g": 0.2,
+        "azucares_g": 30,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "200g posta negra al sartén con aceite",
+        "kcal": 305,
+        "proteina_g": 46,
+        "carbohidratos_g": 0,
+        "grasa_g": 14,
+        "azucares_g": 0,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1/2 pepino",
+        "kcal": 11,
+        "proteina_g": 0.5,
+        "carbohidratos_g": 2.7,
+        "grasa_g": 0.1,
+        "azucares_g": 1.3,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "100g camarones",
+        "kcal": 99,
+        "proteina_g": 24,
+        "carbohidratos_g": 0.2,
+        "grasa_g": 0.3,
+        "azucares_g": 0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 barra proteica chocolate",
+        "kcal": 106.0,
+        "proteina_g": 10.3,
+        "carbohidratos_g": 5.7,
+        "grasa_g": 4.05,
+        "azucares_g": 0.7,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 yogurt Protein Loncoleche (asumido, marca no especificada)",
+        "kcal": 91,
+        "proteina_g": 12,
+        "carbohidratos_g": 8.3,
+        "grasa_g": 0.6,
+        "azucares_g": 8.3,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1456.0,
+      "proteina_g": 156.2,
+      "carbohidratos_g": 90.9,
+      "grasa_g": 50.0,
+      "azucares_g": 44.5
+    },
+    "actividad": {
+      "pasos": 5538,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 45,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 219.2
+        }
+      ],
+      "kcal_quemadas_total": 2004.8,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(160.6) + bici_neta(219.2, MET=4.8972 calibrado)"
+    }
   }
 ]
