@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -263,6 +263,17 @@
       "carbohidratos_g": 1.5,
       "grasa_g": 1.5,
       "azucares_g": 1.5,
+      "origen": "estimado"
+    },
+    {
+      "id": "bowl_tipo_pollo_salmon_palta_guacamole",
+      "nombre": "Combo Street Bowl (pollo a la plancha+chimichurri peruano+salmón+palta+guacamole)",
+      "porcion": "1 bowl (pedido Toteat, ~$16.680)",
+      "kcal": 903,
+      "proteina_g": 82,
+      "carbohidratos_g": 49.3,
+      "grasa_g": 40.6,
+      "azucares_g": 11.7,
       "origen": "estimado"
     }
   ]
