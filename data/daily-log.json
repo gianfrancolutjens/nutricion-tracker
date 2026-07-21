@@ -1072,6 +1072,18 @@
       "grasa_g": 60.9,
       "azucares_g": 27.0
     },
-    "actividad": null
+    "actividad": {
+      "pasos": 6013,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 30,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 146.1
+        }
+      ],
+      "kcal_quemadas_total": 1945.5,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(174.4) + bici_neta(146.1, MET=4.8972 calibrado)"
+    }
   }
 ]
