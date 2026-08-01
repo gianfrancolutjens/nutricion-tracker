@@ -2033,5 +2033,57 @@
       "kcal_quemadas_total": 1815.1,
       "nota": "Sin cardio. KCALQ = BMR(1625) + pasos_neto(77.6) + pesas_neta(112.5, MET=4.0 estimado, sin calibrar)"
     }
+  },
+  {
+    "fecha": "2026-07-31",
+    "items": [
+      {
+        "nombre": "1 trutro de pollo al horno con 3 huevos revueltos",
+        "kcal": 706,
+        "proteina_g": 74.5,
+        "carbohidratos_g": 6.7,
+        "grasa_g": 39.0,
+        "azucares_g": 3.3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 yogurt Blanco + 1 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 358,
+        "proteina_g": 42.9,
+        "carbohidratos_g": 21.1,
+        "grasa_g": 11.1,
+        "azucares_g": 17.9,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Comida china: 1/2 carne mongoliana c/arroz + 1/2 pollo mongoliano + 3 gyozas vapor + 8 wantanes",
+        "kcal": 951,
+        "proteina_g": 52.4,
+        "carbohidratos_g": 77.0,
+        "grasa_g": 41.9,
+        "azucares_g": 8.3,
+        "fuente": "busqueda_web"
+      }
+    ],
+    "totales": {
+      "kcal": 2015,
+      "proteina_g": 169.8,
+      "carbohidratos_g": 104.8,
+      "grasa_g": 92.0,
+      "azucares_g": 29.5
+    },
+    "actividad": {
+      "pasos": 5078,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 45,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 236.1
+        }
+      ],
+      "kcal_quemadas_total": 2008.4,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(147.3) + bici_neta(236.1, MET=5.1972 pooled)"
+    }
   }
 ]
