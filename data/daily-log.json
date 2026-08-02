@@ -2085,5 +2085,68 @@
       "kcal_quemadas_total": 2008.4,
       "nota": "KCALQ = BMR(1625) + pasos_neto(147.3) + bici_neta(236.1, MET=5.1972 pooled)"
     }
+  },
+  {
+    "fecha": "2026-08-01",
+    "items": [
+      {
+        "nombre": "1/2 carne mongoliana + 1/2 pollo mongoliano + 1/2 arroz + 6 wantanes fritos",
+        "kcal": 806.0,
+        "proteina_g": 51.5,
+        "carbohidratos_g": 76.5,
+        "grasa_g": 31.2,
+        "azucares_g": 6.3,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 yogurt Protein Loncoleche + 1 jalea proteica Watts",
+        "kcal": 133,
+        "proteina_g": 22,
+        "carbohidratos_g": 8.8,
+        "grasa_g": 0.6,
+        "azucares_g": 8.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 churrasco italiano (palta, mayonesa, tomate, ketchup)",
+        "kcal": 785,
+        "proteina_g": 47.6,
+        "carbohidratos_g": 47.3,
+        "grasa_g": 43.9,
+        "azucares_g": 7.0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 alfajor",
+        "kcal": 180,
+        "proteina_g": 2,
+        "carbohidratos_g": 24,
+        "grasa_g": 8,
+        "azucares_g": 16,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2206.0,
+      "proteina_g": 171.1,
+      "carbohidratos_g": 176.2,
+      "grasa_g": 86.4,
+      "azucares_g": 55.7
+    },
+    "actividad": {
+      "pasos": 7439,
+      "detalle": [],
+      "kcal_quemadas_total": 1840.7,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(215.7) + ejercicio(0)"
+    }
   }
 ]
