@@ -2056,21 +2056,21 @@
         "fuente": "food-database"
       },
       {
-        "nombre": "Comida china: 1/2 carne mongoliana c/arroz + 1/2 pollo mongoliano + 3 gyozas vapor + 8 wantanes",
-        "kcal": 951,
-        "proteina_g": 52.4,
-        "carbohidratos_g": 77.0,
-        "grasa_g": 41.9,
-        "azucares_g": 8.3,
+        "nombre": "Comida china: 1/2 carne mongoliana (sin arroz) + 1/2 pollo mongoliano (sin arroz) + 3 gyozas vapor + 8 wantanes",
+        "kcal": 927.5,
+        "proteina_g": 58.9,
+        "carbohidratos_g": 77,
+        "grasa_g": 40.9,
+        "azucares_g": 7.8,
         "fuente": "busqueda_web"
       }
     ],
     "totales": {
-      "kcal": 2015,
-      "proteina_g": 169.8,
+      "kcal": 1991.5,
+      "proteina_g": 176.3,
       "carbohidratos_g": 104.8,
-      "grasa_g": 92.0,
-      "azucares_g": 29.5
+      "grasa_g": 91.0,
+      "azucares_g": 29.0
     },
     "actividad": {
       "pasos": 5078,
