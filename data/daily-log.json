@@ -2148,5 +2148,86 @@
       "kcal_quemadas_total": 1840.7,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(215.7) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-02",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "200g carne asada con lechuga, tomate y 1 papa al horno",
+        "kcal": 542,
+        "proteina_g": 60.5,
+        "carbohidratos_g": 40.8,
+        "grasa_g": 14.3,
+        "azucares_g": 4.1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 puñado de maní (~30g)",
+        "kcal": 170,
+        "proteina_g": 7.7,
+        "carbohidratos_g": 4.8,
+        "grasa_g": 14.8,
+        "azucares_g": 1.2,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 Chokita",
+        "kcal": 150,
+        "proteina_g": 1.5,
+        "carbohidratos_g": 21,
+        "grasa_g": 6.5,
+        "azucares_g": 14,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1/2 Bon o Bon",
+        "kcal": 41.5,
+        "proteina_g": 0.8,
+        "carbohidratos_g": 3.8,
+        "grasa_g": 2.6,
+        "azucares_g": 6,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1/2 Prestigio (chocolate con coco)",
+        "kcal": 88,
+        "proteina_g": 1,
+        "carbohidratos_g": 10,
+        "grasa_g": 5,
+        "azucares_g": 8.5,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 piscola",
+        "kcal": 115,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.1,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1408.5,
+      "proteina_g": 119.5,
+      "carbohidratos_g": 100.1,
+      "grasa_g": 45.9,
+      "azucares_g": 51.4
+    },
+    "actividad": {
+      "pasos": 2880,
+      "detalle": [],
+      "kcal_quemadas_total": 1708.5,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(83.5) + ejercicio(0)"
+    }
   }
 ]
