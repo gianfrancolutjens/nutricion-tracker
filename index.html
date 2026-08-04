@@ -18,7 +18,7 @@
   :root{
     --bg:#0f1115; --panel:#171a21; --panel-border:#262b36;
     --text:#e8eaed; --muted:#8b93a3;
-    --kcal:#f2994a; --prot:#56ccf2; --carb:#bb6bd9; --sugar:#eb5757;
+    --kcal:#f2994a; --prot:#56ccf2; --carb:#bb6bd9; --sugar:#eb5757; --grasa:#f2c94c;
     --baseline:#4f5666;
   }
   *{box-sizing:border-box;}
@@ -46,6 +46,8 @@
   .panel.prot .last{color:var(--prot);}
   .panel.carb .last{color:var(--carb);}
   .panel.sugar .last{color:var(--sugar);}
+  .panel.grasa .last{color:var(--grasa);}
+  .panel.full-width{grid-column:1 / -1;}
   .table-panel{
     background:var(--panel); border:1px solid var(--panel-border);
     border-radius:10px; padding:20px; margin-top:8px;
@@ -106,6 +108,9 @@
     </div>
     <div class="panel sugar">
       <div class="chart-wrap"><canvas id="chartSugar"></canvas></div>
+    </div>
+    <div class="panel grasa full-width">
+      <div class="chart-wrap"><canvas id="chartGrasa"></canvas></div>
     </div>
   </div>
 
@@ -524,6 +529,7 @@ const DAILY_LOG = [
 const OBJETIVO_PROTEINA = 150;
 const OBJETIVO_CARBOHIDRATOS = 155;
 const OBJETIVO_AZUCAR = 40;
+const OBJETIVO_GRASA = 60; // piso minimo, sin techo (funcion hormonal/hidratacion)
 const FOOD_DATABASE = [
   {"id": "scoop_proteina_gold_standard", "nombre": "Scoop proteína Gold Standard Whey (chocolate)", "porcion": "30.4g (1 scoop)", "kcal": 120, "proteina_g": 24, "carbohidratos_g": 3, "grasa_g": 1.5, "azucares_g": 1, "origen": "foto"},
   {"id": "barra_proteica", "nombre": "Barra proteica sabor chocolate", "porcion": "60g (1 unidad)", "kcal": 212, "proteina_g": 20.6, "carbohidratos_g": 11.4, "grasa_g": 8.1, "azucares_g": 1.4, "origen": "foto"},
@@ -674,9 +680,9 @@ function kcalChart(labels, kcal, quemadas, suffix){
 }
 
 function renderEmptyCharts(){
-  const titles = { chartKcal: 'Calorías quemadas vs Ingeridas', chartProt: 'Consumo Proteínas', chartCarb: 'Consumo Carbohidratos', chartSugar: 'Consumo Azúcares' };
+  const titles = { chartKcal: 'Calorías quemadas vs Ingeridas', chartProt: 'Consumo Proteínas', chartCarb: 'Consumo Carbohidratos', chartSugar: 'Consumo Azúcares', chartGrasa: 'Consumo Grasas' };
   destroyChart('chartKcal');
-  ['chartKcal','chartProt','chartCarb','chartSugar'].forEach(id=>{
+  ['chartKcal','chartProt','chartCarb','chartSugar','chartGrasa'].forEach(id=>{
     baseLineChart(id, titles[id], [], []);
   });
 }
@@ -690,6 +696,7 @@ function renderDiario(){
   const prot = sorted.map(d => d.totales.proteina_g);
   const carb = sorted.map(d => d.totales.carbohidratos_g);
   const sugar = sorted.map(d => d.totales.azucares_g);
+  const grasa = sorted.map(d => d.totales.grasa_g);
   const quemadas = sorted.map(d => (d.actividad && d.actividad.kcal_quemadas_total) || 0);
 
   kcalChart(labels, kcal, quemadas, '');
@@ -703,6 +710,10 @@ function renderDiario(){
   ]);
   baseLineChart('chartSugar', 'Consumo Azúcares', labels, sugar, '#eb5757', [
     { label: 'Tope (40g)', data: labels.map(() => OBJETIVO_AZUCAR),
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+  baseLineChart('chartGrasa', 'Consumo Grasas', labels, grasa, '#f2c94c', [
+    { label: 'Piso (60g)', data: labels.map(() => OBJETIVO_GRASA),
       borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
   ]);
 
@@ -726,12 +737,14 @@ function renderSemanal(){
   const prot = weekly.map(w => w.totales.proteina_g);
   const carb = weekly.map(w => w.totales.carbohidratos_g);
   const sugar = weekly.map(w => w.totales.azucares_g);
+  const grasa = weekly.map(w => w.totales.grasa_g);
   const quemadas = weekly.map(w => w.kcal_quemadas_total);
 
   // Objetivos escalados por N° de días registrados en cada semana (suma comparable)
   const objProt = weekly.map(w => round1(OBJETIVO_PROTEINA * w.fechas.length));
   const objCarb = weekly.map(w => round1(OBJETIVO_CARBOHIDRATOS * w.fechas.length));
   const objAzucar = weekly.map(w => round1(OBJETIVO_AZUCAR * w.fechas.length));
+  const objGrasa = weekly.map(w => round1(OBJETIVO_GRASA * w.fechas.length));
 
   kcalChart(labels, kcal, quemadas, ' (semanal)');
   baseLineChart('chartProt', 'Consumo Proteínas (semanal)', labels, prot, '#56ccf2', [
@@ -744,6 +757,10 @@ function renderSemanal(){
   ]);
   baseLineChart('chartSugar', 'Consumo Azúcares (semanal)', labels, sugar, '#eb5757', [
     { label: 'Tope semana', data: objAzucar,
+      borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
+  ]);
+  baseLineChart('chartGrasa', 'Consumo Grasas (semanal)', labels, grasa, '#f2c94c', [
+    { label: 'Piso semana', data: objGrasa,
       borderColor: '#27ae60', borderDash: [6,4], pointRadius: 0, fill: false, tension: 0 }
   ]);
 
