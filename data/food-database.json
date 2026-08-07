@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -275,6 +275,17 @@
       "grasa_g": 40.6,
       "azucares_g": 11.7,
       "origen": "estimado"
+    },
+    {
+      "id": "manjarate_soprole_1u",
+      "nombre": "Manjarate Soprole (1 unidad, 80g)",
+      "porcion": "1 unidad (80g)",
+      "kcal": 239,
+      "proteina_g": 4,
+      "carbohidratos_g": 27,
+      "grasa_g": 13,
+      "azucares_g": 24,
+      "origen": "busqueda_web"
     }
   ]
 }
