@@ -2446,14 +2446,23 @@
         "grasa_g": 11,
         "azucares_g": 17,
         "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "2 Manjarate Soprole (postre manjar con chocolate)",
+        "kcal": 478,
+        "proteina_g": 8,
+        "carbohidratos_g": 54,
+        "grasa_g": 26,
+        "azucares_g": 48,
+        "fuente": "busqueda_web"
       }
     ],
     "totales": {
-      "kcal": 1852.5,
-      "proteina_g": 206.0,
-      "carbohidratos_g": 109.0,
-      "grasa_g": 61.0,
-      "azucares_g": 25.1
+      "kcal": 2330.5,
+      "proteina_g": 214.0,
+      "carbohidratos_g": 163.0,
+      "grasa_g": 87.0,
+      "azucares_g": 73.1
     },
     "actividad": {
       "pasos": 3100,
