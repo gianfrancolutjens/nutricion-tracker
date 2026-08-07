@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -285,6 +285,17 @@
       "carbohidratos_g": 27,
       "grasa_g": 13,
       "azucares_g": 24,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "yogurt_loncoleche_fullpro_18g",
+      "nombre": "Yogurt Loncoleche Full Pro (18g proteína)",
+      "porcion": "1 envase (150g)",
+      "kcal": 140,
+      "proteina_g": 18,
+      "carbohidratos_g": 9,
+      "grasa_g": 2,
+      "azucares_g": 7,
       "origen": "busqueda_web"
     }
   ]
