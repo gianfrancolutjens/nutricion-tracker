@@ -2537,5 +2537,86 @@
       "azucares_g": 16.7
     },
     "actividad": null
+  },
+  {
+    "fecha": "2026-08-07",
+    "items": [
+      {
+        "nombre": "1 hallulla",
+        "kcal": 212,
+        "proteina_g": 6.8,
+        "carbohidratos_g": 37.2,
+        "grasa_g": 4,
+        "azucares_g": 2,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "3 huevos revueltos",
+        "kcal": 300,
+        "proteina_g": 18.75,
+        "carbohidratos_g": 1.5,
+        "grasa_g": 22.5,
+        "azucares_g": 1.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 pedacito de dulce de membrillo",
+        "kcal": 75,
+        "proteina_g": 0.1,
+        "carbohidratos_g": 18,
+        "grasa_g": 0,
+        "azucares_g": 17,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche",
+        "kcal": 182,
+        "proteina_g": 24,
+        "carbohidratos_g": 16.6,
+        "grasa_g": 1.2,
+        "azucares_g": 16.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 barros luco con ketchup y ají",
+        "kcal": 667,
+        "proteina_g": 40.2,
+        "carbohidratos_g": 53.7,
+        "grasa_g": 35,
+        "azucares_g": 6,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1/2 alfajor",
+        "kcal": 90,
+        "proteina_g": 1,
+        "carbohidratos_g": 12,
+        "grasa_g": 4,
+        "azucares_g": 8,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1568,
+      "proteina_g": 100.9,
+      "carbohidratos_g": 139.5,
+      "grasa_g": 66.7,
+      "azucares_g": 51.6
+    },
+    "actividad": {
+      "pasos": 4151,
+      "detalle": [],
+      "kcal_quemadas_total": 1745.4,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(120.4) + ejercicio(0)"
+    }
   }
 ]
