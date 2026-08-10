@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -296,6 +296,28 @@
       "carbohidratos_g": 9,
       "grasa_g": 2,
       "azucares_g": 7,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "galleta_trencito_10u",
+      "nombre": "Galleta Cubierta Trencito (10 unidades)",
+      "porcion": "10 unidades (~66g)",
+      "kcal": 307.5,
+      "proteina_g": 5,
+      "carbohidratos_g": 47.5,
+      "grasa_g": 12.5,
+      "azucares_g": 28,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "galleta_bocaditos_membrillo_10u",
+      "nombre": "Galletas Holanda Bocaditos con mermelada de membrillo (10 unidades)",
+      "porcion": "10 unidades (~165g)",
+      "kcal": 690,
+      "proteina_g": 8.25,
+      "carbohidratos_g": 108.9,
+      "grasa_g": 24.75,
+      "azucares_g": 57.75,
       "origen": "busqueda_web"
     }
   ]
