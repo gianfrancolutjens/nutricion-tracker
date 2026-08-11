@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 13,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -318,6 +318,28 @@
       "carbohidratos_g": 108.9,
       "grasa_g": 24.75,
       "azucares_g": 57.75,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "bowl_pollo_salmon_guacamole_mani",
+      "nombre": "Combo Street Bowl (pollo+chimichurri+salmón+palta+guacamole+maní molido)",
+      "porcion": "1 bowl (pedido Toteat, ~$16.680)",
+      "kcal": 988,
+      "proteina_g": 85.9,
+      "carbohidratos_g": 51.7,
+      "grasa_g": 48,
+      "azucares_g": 12.3,
+      "origen": "estimado"
+    },
+    {
+      "id": "quest_bar_1u",
+      "nombre": "Quest Bar (1 unidad, 21g proteína)",
+      "porcion": "1 unidad (60g)",
+      "kcal": 190,
+      "proteina_g": 21,
+      "carbohidratos_g": 21,
+      "grasa_g": 7,
+      "azucares_g": 1,
       "origen": "busqueda_web"
     }
   ]
