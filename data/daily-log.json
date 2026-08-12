@@ -2850,5 +2850,84 @@
       "kcal_quemadas_total": 1930.3,
       "nota": "KCALQ = BMR(1625) + pasos_neto(147.9) + bici_neta(157.4, MET=5.1972 pooled)"
     }
+  },
+  {
+    "fecha": "2026-08-11",
+    "items": [
+      {
+        "nombre": "1 trutro de pollo al horno con arroz y tortilla de zanahoria",
+        "kcal": 751,
+        "proteina_g": 65.7,
+        "carbohidratos_g": 58.2,
+        "grasa_g": 26.9,
+        "azucares_g": 5.9,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche",
+        "kcal": 182,
+        "proteina_g": 24,
+        "carbohidratos_g": 16.6,
+        "grasa_g": 1.2,
+        "azucares_g": 16.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 barra Quest Protein",
+        "kcal": 190,
+        "proteina_g": 21,
+        "carbohidratos_g": 21,
+        "grasa_g": 7,
+        "azucares_g": 1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 barra de proteína (15g, marca no recordada)",
+        "kcal": 190,
+        "proteina_g": 15,
+        "carbohidratos_g": 17,
+        "grasa_g": 7,
+        "azucares_g": 4,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "200g carne asada (asado)",
+        "kcal": 360,
+        "proteina_g": 56,
+        "carbohidratos_g": 0,
+        "grasa_g": 14,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "100g queso de cabra",
+        "kcal": 364,
+        "proteina_g": 21.6,
+        "carbohidratos_g": 0.1,
+        "grasa_g": 29.8,
+        "azucares_g": 0.1,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 2037,
+      "proteina_g": 203.3,
+      "carbohidratos_g": 112.9,
+      "grasa_g": 85.9,
+      "azucares_g": 27.6
+    },
+    "actividad": {
+      "pasos": 3100,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 60,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 314.8
+        }
+      ],
+      "kcal_quemadas_total": 2029.7,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(89.9) + bici_neta(314.8, MET=5.1972 pooled). Usuario estimo ~300kcal en la maquina, consistente con el calculo (314.8kcal)."
+    }
   }
 ]
