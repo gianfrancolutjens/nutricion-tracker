@@ -2929,5 +2929,226 @@
       "kcal_quemadas_total": 2029.7,
       "nota": "KCALQ = BMR(1625) + pasos_neto(89.9) + bici_neta(314.8, MET=5.1972 pooled). Usuario estimo ~300kcal en la maquina, consistente con el calculo (314.8kcal)."
     }
+  },
+  {
+    "fecha": "2026-08-12",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trutro de pollo al horno con arroz y tortilla de zanahoria",
+        "kcal": 751,
+        "proteina_g": 65.7,
+        "carbohidratos_g": 58.2,
+        "grasa_g": 26.9,
+        "azucares_g": 5.9,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "10 piezas de sushi",
+        "kcal": 500,
+        "proteina_g": 20,
+        "carbohidratos_g": 70,
+        "grasa_g": 15,
+        "azucares_g": 10,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "2 gyozas fritas",
+        "kcal": 130,
+        "proteina_g": 5,
+        "carbohidratos_g": 12,
+        "grasa_g": 6,
+        "azucares_g": 0.6,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 barra de proteína (15g, marca no recordada)",
+        "kcal": 95,
+        "proteina_g": 7.5,
+        "carbohidratos_g": 8.5,
+        "grasa_g": 3.5,
+        "azucares_g": 2,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1820,
+      "proteina_g": 156.2,
+      "carbohidratos_g": 168.8,
+      "grasa_g": 54.1,
+      "azucares_g": 36.6
+    },
+    "actividad": {
+      "pasos": 1200,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 35,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 183.6
+        }
+      ],
+      "kcal_quemadas_total": 1843.4,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(34.8) + bici_neta(183.6, MET=5.1972 pooled)"
+    }
+  },
+  {
+    "fecha": "2026-08-13",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 hallulla con queso, jamón de pavo, mantequilla y mayonesa",
+        "kcal": 551,
+        "proteina_g": 22.1,
+        "carbohidratos_g": 38.6,
+        "grasa_g": 34.8,
+        "azucares_g": 3.1,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 pollo a la parrilla con 1 palta y apio",
+        "kcal": 1128,
+        "proteina_g": 111.3,
+        "carbohidratos_g": 13.8,
+        "grasa_g": 69.1,
+        "azucares_g": 1.7,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 barra Quest Protein",
+        "kcal": 190,
+        "proteina_g": 21,
+        "carbohidratos_g": 21,
+        "grasa_g": 7,
+        "azucares_g": 1,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2213,
+      "proteina_g": 212.4,
+      "carbohidratos_g": 93.5,
+      "grasa_g": 113.6,
+      "azucares_g": 23.9
+    },
+    "actividad": {
+      "pasos": 4693,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 10,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 52.5
+        }
+      ],
+      "kcal_quemadas_total": 1813.6,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(136.1) + bici_neta(52.5, MET=5.1972 pooled)"
+    }
+  },
+  {
+    "fecha": "2026-08-14",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 hallulla con queso, jamón de pavo y mayonesa",
+        "kcal": 479,
+        "proteina_g": 22.0,
+        "carbohidratos_g": 38.6,
+        "grasa_g": 26.7,
+        "azucares_g": 3.1,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "200g carne molida salteada",
+        "kcal": 500,
+        "proteina_g": 52,
+        "carbohidratos_g": 0,
+        "grasa_g": 34,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Ensalada de tomate, lechuga, palmito y salsa césar",
+        "kcal": 180,
+        "proteina_g": 2,
+        "carbohidratos_g": 8,
+        "grasa_g": 16,
+        "azucares_g": 3,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 kiwi + 1 pera",
+        "kcal": 99,
+        "proteina_g": 1.2,
+        "carbohidratos_g": 25,
+        "grasa_g": 0.5,
+        "azucares_g": 19,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/4 barra Quest Protein",
+        "kcal": 47.5,
+        "proteina_g": 5.25,
+        "carbohidratos_g": 5.25,
+        "grasa_g": 1.75,
+        "azucares_g": 0.25,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1607.5,
+      "proteina_g": 130.4,
+      "carbohidratos_g": 96.5,
+      "grasa_g": 81.7,
+      "azucares_g": 43.0
+    },
+    "actividad": {
+      "pasos": 3000,
+      "detalle": [],
+      "kcal_quemadas_total": 1712.0,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(87.0) + ejercicio(0)"
+    }
   }
 ]
