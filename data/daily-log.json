@@ -3031,11 +3031,11 @@
         "fuente": "estimado"
       },
       {
-        "nombre": "1/2 pollo a la parrilla con 1 palta y apio",
-        "kcal": 1128,
-        "proteina_g": 111.3,
+        "nombre": "1/2 pollo a la parrilla (SIN piel) con 1 palta y apio",
+        "kcal": 908,
+        "proteina_g": 127.3,
         "carbohidratos_g": 13.8,
-        "grasa_g": 69.1,
+        "grasa_g": 35.5,
         "azucares_g": 1.7,
         "fuente": "estimado"
       },
@@ -3059,10 +3059,10 @@
       }
     ],
     "totales": {
-      "kcal": 2213,
-      "proteina_g": 212.4,
+      "kcal": 1993,
+      "proteina_g": 228.4,
       "carbohidratos_g": 93.5,
-      "grasa_g": 113.6,
+      "grasa_g": 80.0,
       "azucares_g": 23.9
     },
     "actividad": {
