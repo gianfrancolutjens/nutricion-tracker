@@ -3150,5 +3150,86 @@
       "kcal_quemadas_total": 1712.0,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(87.0) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-15",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 hallulla",
+        "kcal": 212,
+        "proteina_g": 6.8,
+        "carbohidratos_g": 37.2,
+        "grasa_g": 4,
+        "azucares_g": 2,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1/4 palta con mayonesa",
+        "kcal": 154,
+        "proteina_g": 0.8,
+        "carbohidratos_g": 3.4,
+        "grasa_g": 15.6,
+        "azucares_g": 0.6,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 trutro entero de pollo al horno (sin piel)",
+        "kcal": 406,
+        "proteina_g": 55.7,
+        "carbohidratos_g": 5.2,
+        "grasa_g": 16.5,
+        "azucares_g": 1.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 churrasco italiano con filete",
+        "kcal": 785,
+        "proteina_g": 47.6,
+        "carbohidratos_g": 47.3,
+        "grasa_g": 43.9,
+        "azucares_g": 7.0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 porción cheesecake",
+        "kcal": 160,
+        "proteina_g": 2.5,
+        "carbohidratos_g": 12.5,
+        "grasa_g": 11,
+        "azucares_g": 10,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 barra Quest Protein",
+        "kcal": 95.0,
+        "proteina_g": 10.5,
+        "carbohidratos_g": 10.5,
+        "grasa_g": 3.5,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2114.0,
+      "proteina_g": 171.9,
+      "carbohidratos_g": 135.7,
+      "grasa_g": 97.2,
+      "azucares_g": 39.5
+    },
+    "actividad": {
+      "pasos": 4000,
+      "detalle": [],
+      "kcal_quemadas_total": 1741.0,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(116.0) + ejercicio(0)"
+    }
   }
 ]
