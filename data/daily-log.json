@@ -3231,5 +3231,113 @@
       "kcal_quemadas_total": 1741.0,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(116.0) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-16",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 hallulla",
+        "kcal": 212,
+        "proteina_g": 6.8,
+        "carbohidratos_g": 37.2,
+        "grasa_g": 4,
+        "azucares_g": 2,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 lata de atún al agua + mayonesa + 1/4 palta",
+        "kcal": 293,
+        "proteina_g": 31.5,
+        "carbohidratos_g": 3.4,
+        "grasa_g": 16.6,
+        "azucares_g": 0.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 cocada",
+        "kcal": 120,
+        "proteina_g": 1,
+        "carbohidratos_g": 18,
+        "grasa_g": 5,
+        "azucares_g": 16,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 cuadradito de chocolate Sahne Nuss",
+        "kcal": 85,
+        "proteina_g": 1,
+        "carbohidratos_g": 9,
+        "grasa_g": 5,
+        "azucares_g": 8,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "2 Coca-Cola Zero lata (350cc)",
+        "kcal": 2,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.4,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trutro entero de pollo asado (sin piel)",
+        "kcal": 406,
+        "proteina_g": 55.7,
+        "carbohidratos_g": 5.2,
+        "grasa_g": 16.5,
+        "azucares_g": 1.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trozo de tortilla de papas",
+        "kcal": 265,
+        "proteina_g": 7,
+        "carbohidratos_g": 20,
+        "grasa_g": 17,
+        "azucares_g": 1.5,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1/2 porción de arroz",
+        "kcal": 97.5,
+        "proteina_g": 2.0,
+        "carbohidratos_g": 21.5,
+        "grasa_g": 0.2,
+        "azucares_g": 0.05,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 porción de repollo",
+        "kcal": 25,
+        "proteina_g": 1.3,
+        "carbohidratos_g": 6,
+        "grasa_g": 0.1,
+        "azucares_g": 3,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1807.5,
+      "proteina_g": 154.3,
+      "carbohidratos_g": 140.3,
+      "grasa_g": 67.1,
+      "azucares_g": 50.6
+    },
+    "actividad": {
+      "pasos": 2921,
+      "detalle": [],
+      "kcal_quemadas_total": 1709.7,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(84.7) + ejercicio(0)"
+    }
   }
 ]
