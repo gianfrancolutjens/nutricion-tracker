@@ -3339,5 +3339,140 @@
       "kcal_quemadas_total": 1709.7,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(84.7) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-17",
+    "items": [
+      {
+        "nombre": "2 hallullitas chicas con palta, jamón y queso",
+        "kcal": 449,
+        "proteina_g": 22.7,
+        "carbohidratos_g": 41.4,
+        "grasa_g": 22.0,
+        "azucares_g": 2.9,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 trutro de pollo asado (sin piel)",
+        "kcal": 406,
+        "proteina_g": 55.7,
+        "carbohidratos_g": 5.2,
+        "grasa_g": 16.5,
+        "azucares_g": 1.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 papa cocida",
+        "kcal": 167,
+        "proteina_g": 3.8,
+        "carbohidratos_g": 37.8,
+        "grasa_g": 0.2,
+        "azucares_g": 2.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 jaleas proteicas Watts",
+        "kcal": 84,
+        "proteina_g": 20,
+        "carbohidratos_g": 1.0,
+        "grasa_g": 0,
+        "azucares_g": 1.0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 yogurt Protein+ Soprole",
+        "kcal": 105,
+        "proteina_g": 10.2,
+        "carbohidratos_g": 9.8,
+        "grasa_g": 2.8,
+        "azucares_g": 9.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1/2 porción cheesecake",
+        "kcal": 160,
+        "proteina_g": 2.5,
+        "carbohidratos_g": 12.5,
+        "grasa_g": 11,
+        "azucares_g": 10,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1371,
+      "proteina_g": 114.9,
+      "carbohidratos_g": 107.7,
+      "grasa_g": 52.5,
+      "azucares_g": 27.7
+    },
+    "actividad": {
+      "pasos": 2700,
+      "detalle": [],
+      "kcal_quemadas_total": 1703.3,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(78.3) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-08-18",
+    "items": [
+      {
+        "nombre": "1 marraqueta con mantequilla, jamón y queso",
+        "kcal": 475,
+        "proteina_g": 22.2,
+        "carbohidratos_g": 41.0,
+        "grasa_g": 25.0,
+        "azucares_g": 2.7,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "3 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 393,
+        "proteina_g": 60,
+        "carbohidratos_g": 27.9,
+        "grasa_g": 3.3,
+        "azucares_g": 25.9,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1/2 palta con pollo y mayonesa",
+        "kcal": 379,
+        "proteina_g": 32.6,
+        "carbohidratos_g": 6.4,
+        "grasa_g": 24.4,
+        "azucares_g": 0.9,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "Ensalada de lechuga y rabanito",
+        "kcal": 11,
+        "proteina_g": 0.6,
+        "carbohidratos_g": 2.2,
+        "grasa_g": 0.1,
+        "azucares_g": 1.1,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "3 galletitas de limón",
+        "kcal": 150,
+        "proteina_g": 2,
+        "carbohidratos_g": 20,
+        "grasa_g": 7,
+        "azucares_g": 10,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1408,
+      "proteina_g": 117.4,
+      "carbohidratos_g": 97.5,
+      "grasa_g": 59.8,
+      "azucares_g": 40.6
+    },
+    "actividad": {
+      "pasos": 3000,
+      "detalle": [],
+      "kcal_quemadas_total": 1712.0,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(87.0) + ejercicio(0)"
+    }
   }
 ]
