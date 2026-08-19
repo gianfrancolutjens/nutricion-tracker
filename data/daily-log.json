@@ -3425,12 +3425,12 @@
         "fuente": "estimado"
       },
       {
-        "nombre": "3 yogurt Protein Loncoleche + 1 scoop proteína",
-        "kcal": 393,
-        "proteina_g": 60,
-        "carbohidratos_g": 27.9,
-        "grasa_g": 3.3,
-        "azucares_g": 25.9,
+        "nombre": "3 yogurt Protein+ Soprole + 1 scoop proteína",
+        "kcal": 435,
+        "proteina_g": 54.6,
+        "carbohidratos_g": 32.4,
+        "grasa_g": 9.9,
+        "azucares_g": 30.4,
         "fuente": "food-database"
       },
       {
@@ -3462,11 +3462,11 @@
       }
     ],
     "totales": {
-      "kcal": 1408,
-      "proteina_g": 117.4,
-      "carbohidratos_g": 97.5,
-      "grasa_g": 59.8,
-      "azucares_g": 40.6
+      "kcal": 1450,
+      "proteina_g": 112.0,
+      "carbohidratos_g": 102.0,
+      "grasa_g": 66.4,
+      "azucares_g": 45.1
     },
     "actividad": {
       "pasos": 3000,
