@@ -3474,5 +3474,203 @@
       "kcal_quemadas_total": 1712.0,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(87.0) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-19",
+    "items": [
+      {
+        "nombre": "3 huevos revueltos con 1,5 marraquetas",
+        "kcal": 645.0,
+        "proteina_g": 29.2,
+        "carbohidratos_g": 61.5,
+        "grasa_g": 29.2,
+        "azucares_g": 4.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1/2 palta",
+        "kcal": 120,
+        "proteina_g": 1.5,
+        "carbohidratos_g": 6,
+        "grasa_g": 10.5,
+        "azucares_g": 0.45,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 pechuga de pollo con mayonesa",
+        "kcal": 259,
+        "proteina_g": 31.1,
+        "carbohidratos_g": 0.4,
+        "grasa_g": 13.9,
+        "azucares_g": 0.4,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "Ensalada",
+        "kcal": 50,
+        "proteina_g": 2,
+        "carbohidratos_g": 8,
+        "grasa_g": 1,
+        "azucares_g": 3,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1/2 porción Pop Corn dulce (cine)",
+        "kcal": 300,
+        "proteina_g": 3,
+        "carbohidratos_g": 45,
+        "grasa_g": 12,
+        "azucares_g": 25,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 Coca-Cola Zero grande",
+        "kcal": 1.5,
+        "proteina_g": 0,
+        "carbohidratos_g": 0.3,
+        "grasa_g": 0,
+        "azucares_g": 0,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1417.5,
+      "proteina_g": 76.8,
+      "carbohidratos_g": 121.7,
+      "grasa_g": 66.6,
+      "azucares_g": 33.9
+    },
+    "actividad": {
+      "pasos": 3741,
+      "detalle": [],
+      "kcal_quemadas_total": 1733.5,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(108.5) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-08-20",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein+ Soprole + 1 scoop proteína",
+        "kcal": 330,
+        "proteina_g": 44.4,
+        "carbohidratos_g": 22.6,
+        "grasa_g": 7.1,
+        "azucares_g": 20.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 marraqueta con queso y mantequilla (doble queso)",
+        "kcal": 582,
+        "proteina_g": 27.1,
+        "carbohidratos_g": 40.8,
+        "grasa_g": 35.0,
+        "azucares_g": 2.8,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 churrasco italiano",
+        "kcal": 785,
+        "proteina_g": 47.6,
+        "carbohidratos_g": 47.3,
+        "grasa_g": 43.9,
+        "azucares_g": 7.0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1739,
+      "proteina_g": 129.1,
+      "carbohidratos_g": 111.2,
+      "grasa_g": 86.0,
+      "azucares_g": 30.9
+    },
+    "actividad": {
+      "pasos": 1083,
+      "detalle": [],
+      "kcal_quemadas_total": 1656.4,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(31.4) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-08-21",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein+ Soprole + 1 scoop proteína",
+        "kcal": 330,
+        "proteina_g": 44.4,
+        "carbohidratos_g": 22.6,
+        "grasa_g": 7.1,
+        "azucares_g": 20.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 marraqueta con queso y mantequilla (doble queso)",
+        "kcal": 582,
+        "proteina_g": 27.1,
+        "carbohidratos_g": 40.8,
+        "grasa_g": 35.0,
+        "azucares_g": 2.8,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 zapallitos italianos con ensalada de zanahoria",
+        "kcal": 85,
+        "proteina_g": 4.4,
+        "carbohidratos_g": 17.1,
+        "grasa_g": 1.2,
+        "azucares_g": 11.6,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 bife de chorizo con papas fritas y 1/2 pechuga de pollo deshuesada",
+        "kcal": 1245,
+        "proteina_g": 119,
+        "carbohidratos_g": 42,
+        "grasa_g": 64.6,
+        "azucares_g": 0.5,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 chorizo",
+        "kcal": 150,
+        "proteina_g": 7.5,
+        "carbohidratos_g": 1,
+        "grasa_g": 12.5,
+        "azucares_g": 0.25,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 2392,
+      "proteina_g": 202.4,
+      "carbohidratos_g": 123.5,
+      "grasa_g": 120.4,
+      "azucares_g": 35.8
+    },
+    "actividad": {
+      "pasos": 3541,
+      "detalle": [],
+      "kcal_quemadas_total": 1727.7,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(102.7) + ejercicio(0)"
+    }
   }
 ]
