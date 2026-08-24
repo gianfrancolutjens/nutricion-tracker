@@ -3672,5 +3672,113 @@
       "kcal_quemadas_total": 1727.7,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(102.7) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-22",
+    "items": [
+      {
+        "nombre": "Salmón con papas mayo y ensalada chilena (sin aceite)",
+        "kcal": 553,
+        "proteina_g": 38.5,
+        "carbohidratos_g": 38.6,
+        "grasa_g": 26.7,
+        "azucares_g": 6.1,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 empanada frita de jaiba, camarón y macha con queso",
+        "kcal": 540,
+        "proteina_g": 18,
+        "carbohidratos_g": 45,
+        "grasa_g": 30,
+        "azucares_g": 2,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 yogurt Protein Loncoleche",
+        "kcal": 91,
+        "proteina_g": 12,
+        "carbohidratos_g": 8.3,
+        "grasa_g": 0.6,
+        "azucares_g": 8.3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1226,
+      "proteina_g": 78.5,
+      "carbohidratos_g": 92.4,
+      "grasa_g": 57.3,
+      "azucares_g": 16.9
+    },
+    "actividad": {
+      "pasos": 1874,
+      "detalle": [],
+      "kcal_quemadas_total": 1679.3,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(54.3) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-08-23",
+    "items": [
+      {
+        "nombre": "1 yogurt Protein Loncoleche",
+        "kcal": 91,
+        "proteina_g": 12,
+        "carbohidratos_g": 8.3,
+        "grasa_g": 0.6,
+        "azucares_g": 8.3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Comida peruana: pancito+mantequilla, filete con salsa de jaiba y camarones, risotto de albahaca, 1/2 suspiro limeño",
+        "kcal": 1297,
+        "proteina_g": 64.5,
+        "carbohidratos_g": 105.1,
+        "grasa_g": 64.5,
+        "azucares_g": 38,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 yogurt Protein+ Soprole",
+        "kcal": 105,
+        "proteina_g": 10.2,
+        "carbohidratos_g": 9.8,
+        "grasa_g": 2.8,
+        "azucares_g": 9.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1535,
+      "proteina_g": 96.7,
+      "carbohidratos_g": 123.7,
+      "grasa_g": 67.9,
+      "azucares_g": 56.6
+    },
+    "actividad": {
+      "pasos": 900,
+      "detalle": [],
+      "kcal_quemadas_total": 1651.1,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(26.1) + ejercicio(0)"
+    }
   }
 ]
