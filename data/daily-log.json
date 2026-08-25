@@ -3780,5 +3780,68 @@
       "kcal_quemadas_total": 1651.1,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(26.1) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-24",
+    "items": [
+      {
+        "nombre": "1 yogurt Protein+ Soprole",
+        "kcal": 105,
+        "proteina_g": 10.2,
+        "carbohidratos_g": 9.8,
+        "grasa_g": 2.8,
+        "azucares_g": 9.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 barra Quest Protein",
+        "kcal": 190,
+        "proteina_g": 21,
+        "carbohidratos_g": 21,
+        "grasa_g": 7,
+        "azucares_g": 1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Salmón con 1/2 papa cocida y repollo con zanahoria",
+        "kcal": 406.0,
+        "proteina_g": 37.0,
+        "carbohidratos_g": 26.7,
+        "grasa_g": 16.2,
+        "azucares_g": 5.1,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1045.0,
+      "proteina_g": 126.2,
+      "carbohidratos_g": 77.6,
+      "grasa_g": 28.7,
+      "azucares_g": 34.0
+    },
+    "actividad": {
+      "pasos": 2478,
+      "detalle": [],
+      "kcal_quemadas_total": 1696.9,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(71.9) + ejercicio(0)"
+    }
   }
 ]
