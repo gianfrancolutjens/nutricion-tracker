@@ -4026,14 +4026,23 @@
         "grasa_g": 0,
         "azucares_g": 0.5,
         "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trozo torta de alfajor",
+        "kcal": 380,
+        "proteina_g": 5,
+        "carbohidratos_g": 45,
+        "grasa_g": 20,
+        "azucares_g": 35,
+        "fuente": "estimado"
       }
     ],
     "totales": {
-      "kcal": 1323,
-      "proteina_g": 146.3,
-      "carbohidratos_g": 79.4,
-      "grasa_g": 42.6,
-      "azucares_g": 31.4
+      "kcal": 1703,
+      "proteina_g": 151.3,
+      "carbohidratos_g": 124.4,
+      "grasa_g": 62.6,
+      "azucares_g": 66.4
     },
     "actividad": {
       "pasos": 3688,
