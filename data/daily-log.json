@@ -3843,5 +3843,203 @@
       "kcal_quemadas_total": 1696.9,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(71.9) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-25",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 churrasco de filete con mayonesa, palta, tomate y ketchup",
+        "kcal": 785,
+        "proteina_g": 47.6,
+        "carbohidratos_g": 47.3,
+        "grasa_g": 43.9,
+        "azucares_g": 7.0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 porción de papas fritas",
+        "kcal": 330,
+        "proteina_g": 4,
+        "carbohidratos_g": 42,
+        "grasa_g": 16,
+        "azucares_g": 0.5,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 yogurt Protein Loncoleche (marca asumida)",
+        "kcal": 91,
+        "proteina_g": 12,
+        "carbohidratos_g": 8.3,
+        "grasa_g": 0.6,
+        "azucares_g": 8.3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 puñado de maní (~30g)",
+        "kcal": 170,
+        "proteina_g": 7.7,
+        "carbohidratos_g": 4.8,
+        "grasa_g": 14.8,
+        "azucares_g": 1.2,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1678,
+      "proteina_g": 119.3,
+      "carbohidratos_g": 122.0,
+      "grasa_g": 78.0,
+      "azucares_g": 34.6
+    },
+    "actividad": {
+      "pasos": 5387,
+      "detalle": [],
+      "kcal_quemadas_total": 1781.2,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(156.2) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-08-26",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Cazuela de carne + ensalada + 2 huesillos de postre",
+        "kcal": 670,
+        "proteina_g": 28,
+        "carbohidratos_g": 103,
+        "grasa_g": 16,
+        "azucares_g": 64,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "3 tostadas con mantequilla, jamón y quesillo",
+        "kcal": 537.5,
+        "proteina_g": 29.6,
+        "carbohidratos_g": 43.8,
+        "grasa_g": 28.4,
+        "azucares_g": 5.5,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 yogurt Protein Loncoleche",
+        "kcal": 91,
+        "proteina_g": 12,
+        "carbohidratos_g": 8.3,
+        "grasa_g": 0.6,
+        "azucares_g": 8.3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1642.5,
+      "proteina_g": 127.6,
+      "carbohidratos_g": 175.2,
+      "grasa_g": 47.7,
+      "azucares_g": 95.9
+    },
+    "actividad": {
+      "pasos": 1118,
+      "detalle": [],
+      "kcal_quemadas_total": 1657.4,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(32.4) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-08-27",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 bistec (~180g) al sartén",
+        "kcal": 324,
+        "proteina_g": 50.4,
+        "carbohidratos_g": 0,
+        "grasa_g": 12.6,
+        "azucares_g": 0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "3 huevos revueltos",
+        "kcal": 300,
+        "proteina_g": 18.75,
+        "carbohidratos_g": 1.5,
+        "grasa_g": 22.5,
+        "azucares_g": 1.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 pan ciabatta",
+        "kcal": 250,
+        "proteina_g": 9,
+        "carbohidratos_g": 48,
+        "grasa_g": 2,
+        "azucares_g": 2,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 yogurt Protein+ Soprole",
+        "kcal": 105,
+        "proteina_g": 10.2,
+        "carbohidratos_g": 9.8,
+        "grasa_g": 2.8,
+        "azucares_g": 9.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1323,
+      "proteina_g": 146.3,
+      "carbohidratos_g": 79.4,
+      "grasa_g": 42.6,
+      "azucares_g": 31.4
+    },
+    "actividad": {
+      "pasos": 3688,
+      "detalle": [],
+      "kcal_quemadas_total": 1732.0,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(107.0) + ejercicio(0)"
+    }
   }
 ]
