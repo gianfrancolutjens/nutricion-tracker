@@ -4257,5 +4257,59 @@
       "kcal_quemadas_total": 1664.8,
       "nota": "Gym no mencionado, asumido sin actividad. KCALQ = BMR(1625) + pasos_neto(39.8) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-08-31",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 porción de pastel de papas",
+        "kcal": 350,
+        "proteina_g": 20,
+        "carbohidratos_g": 30,
+        "grasa_g": 15,
+        "azucares_g": 4,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 porción de kuchen",
+        "kcal": 349,
+        "proteina_g": 5,
+        "carbohidratos_g": 45,
+        "grasa_g": 16,
+        "azucares_g": 28,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "Salmón tai (salsa de mango y camarones) con papas duquesa",
+        "kcal": 601,
+        "proteina_g": 40.2,
+        "carbohidratos_g": 45,
+        "grasa_g": 27.8,
+        "azucares_g": 17,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1602,
+      "proteina_g": 113.2,
+      "carbohidratos_g": 139.6,
+      "grasa_g": 61.5,
+      "azucares_g": 66.6
+    },
+    "actividad": {
+      "pasos": 2583,
+      "detalle": [],
+      "kcal_quemadas_total": 1699.9,
+      "nota": "Gym no mencionado, asumido sin actividad. KCALQ = BMR(1625) + pasos_neto(74.9) + ejercicio(0)"
+    }
   }
 ]
