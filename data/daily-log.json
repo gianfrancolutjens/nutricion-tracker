@@ -4311,5 +4311,66 @@
       "kcal_quemadas_total": 1699.9,
       "nota": "Gym no mencionado, asumido sin actividad. KCALQ = BMR(1625) + pasos_neto(74.9) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-09-03",
+    "items": [
+      {
+        "nombre": "3 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 393,
+        "proteina_g": 60,
+        "carbohidratos_g": 27.9,
+        "grasa_g": 3.3,
+        "azucares_g": 25.9,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Combo Street Bowl (pollo a la plancha+chimichurri peruano+salmón+palta+guacamole)",
+        "kcal": 903,
+        "proteina_g": 82,
+        "carbohidratos_g": 49.3,
+        "grasa_g": 40.6,
+        "azucares_g": 11.7,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trutro entero de pollo al horno con 1/2 palta",
+        "kcal": 526,
+        "proteina_g": 57.2,
+        "carbohidratos_g": 11.2,
+        "grasa_g": 27.0,
+        "azucares_g": 2.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1864,
+      "proteina_g": 209.2,
+      "carbohidratos_g": 88.9,
+      "grasa_g": 70.9,
+      "azucares_g": 40.3
+    },
+    "actividad": {
+      "pasos": 9000,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 45,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 236.1
+        }
+      ],
+      "kcal_quemadas_total": 2122.1,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(261.0) + bici_neta(236.1, MET=5.1972 pooled)"
+    }
   }
 ]
