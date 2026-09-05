@@ -4420,14 +4420,23 @@
         "grasa_g": 12.3,
         "azucares_g": 1.4,
         "fuente": "food-database"
+      },
+      {
+        "nombre": "3 láminas de queso + 1/2 palta",
+        "kcal": 330,
+        "proteina_g": 16.5,
+        "carbohidratos_g": 6.6,
+        "grasa_g": 27.3,
+        "azucares_g": 1.1,
+        "fuente": "estimado"
       }
     ],
     "totales": {
-      "kcal": 1505,
-      "proteina_g": 175.2,
-      "carbohidratos_g": 117.5,
-      "grasa_g": 38.7,
-      "azucares_g": 24.5
+      "kcal": 1835,
+      "proteina_g": 191.7,
+      "carbohidratos_g": 124.1,
+      "grasa_g": 66.0,
+      "azucares_g": 25.6
     },
     "actividad": {
       "pasos": 8233,
