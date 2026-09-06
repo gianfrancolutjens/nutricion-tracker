@@ -4561,5 +4561,77 @@
       "kcal_quemadas_total": 1863.8,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(238.8) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-09-05",
+    "items": [
+      {
+        "nombre": "3 huevos con queso y jamón",
+        "kcal": 559.5,
+        "proteina_g": 41.4,
+        "carbohidratos_g": 3.0,
+        "grasa_g": 41.1,
+        "azucares_g": 2.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trozo de queque de plátano",
+        "kcal": 280,
+        "proteina_g": 4,
+        "carbohidratos_g": 40,
+        "grasa_g": 12,
+        "azucares_g": 20,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 jalea proteica",
+        "kcal": 224,
+        "proteina_g": 34,
+        "carbohidratos_g": 17.1,
+        "grasa_g": 1.2,
+        "azucares_g": 17.1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "200g carne a la parrilla + 1 longaniza",
+        "kcal": 790,
+        "proteina_g": 72,
+        "carbohidratos_g": 2,
+        "grasa_g": 54,
+        "azucares_g": 0.5,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1/2 cerveza",
+        "kcal": 75,
+        "proteina_g": 0.5,
+        "carbohidratos_g": 6,
+        "grasa_g": 0,
+        "azucares_g": 0.2,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "3 strips de pollo (KFC)",
+        "kcal": 300,
+        "proteina_g": 24,
+        "carbohidratos_g": 18,
+        "grasa_g": 16,
+        "azucares_g": 1,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 2228.5,
+      "proteina_g": 175.9,
+      "carbohidratos_g": 86.1,
+      "grasa_g": 124.3,
+      "azucares_g": 41.3
+    },
+    "actividad": {
+      "pasos": 13800,
+      "detalle": [],
+      "kcal_quemadas_total": 2025.2,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(400.2) + ejercicio(0)"
+    }
   }
 ]
