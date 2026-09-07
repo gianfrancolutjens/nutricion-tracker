@@ -4633,5 +4633,77 @@
       "kcal_quemadas_total": 2025.2,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(400.2) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-09-06",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 presas de pollo a la parrilla (~150g, sin piel)",
+        "kcal": 247.5,
+        "proteina_g": 46.5,
+        "carbohidratos_g": 0,
+        "grasa_g": 5.4,
+        "azucares_g": 0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "Tomate con cebolla de ensalada",
+        "kcal": 21,
+        "proteina_g": 0.8,
+        "carbohidratos_g": 4.8,
+        "grasa_g": 0.1,
+        "azucares_g": 2.6,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 empanada de pino al horno",
+        "kcal": 437,
+        "proteina_g": 18,
+        "carbohidratos_g": 49,
+        "grasa_g": 16,
+        "azucares_g": 3,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 hallulla con 2 láminas de queso, 2 láminas de jamón y dulce de membrillo",
+        "kcal": 460,
+        "proteina_g": 22.0,
+        "carbohidratos_g": 56.2,
+        "grasa_g": 16.4,
+        "azucares_g": 19.7,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1509.5,
+      "proteina_g": 145.3,
+      "carbohidratos_g": 130.1,
+      "grasa_g": 40.6,
+      "azucares_g": 43.4
+    },
+    "actividad": {
+      "pasos": 2586,
+      "detalle": [],
+      "kcal_quemadas_total": 1700.0,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(75.0) + ejercicio(0)"
+    }
   }
 ]
