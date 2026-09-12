@@ -4835,5 +4835,208 @@
       "kcal_quemadas_total": 1800.0,
       "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(175.0) + ejercicio(0)"
     }
+  },
+  {
+    "fecha": "2026-09-09",
+    "items": [
+      {
+        "nombre": "3 huevos con 1/2 tostada de pan de molde integral",
+        "kcal": 337,
+        "proteina_g": 20.6,
+        "carbohidratos_g": 8.2,
+        "grasa_g": 22.8,
+        "azucares_g": 2.0,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 alfajores",
+        "kcal": 360,
+        "proteina_g": 4,
+        "carbohidratos_g": 48,
+        "grasa_g": 16,
+        "azucares_g": 32,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "10 galletas dulces (caja redonda, India)",
+        "kcal": 500,
+        "proteina_g": 6,
+        "carbohidratos_g": 65,
+        "grasa_g": 25,
+        "azucares_g": 30,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "10 piezas de sushi con arroz",
+        "kcal": 500,
+        "proteina_g": 20,
+        "carbohidratos_g": 70,
+        "grasa_g": 15,
+        "azucares_g": 10,
+        "fuente": "busqueda_web"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2041,
+      "proteina_g": 108.6,
+      "carbohidratos_g": 211.3,
+      "grasa_g": 81.5,
+      "azucares_g": 92.1
+    },
+    "actividad": {
+      "pasos": 7259,
+      "detalle": [],
+      "kcal_quemadas_total": 1835.5,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(210.5) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-09-10",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 trutro de pollo al horno con 3 huevos y 1/2 palta",
+        "kcal": 826,
+        "proteina_g": 76.0,
+        "carbohidratos_g": 12.7,
+        "grasa_g": 49.5,
+        "azucares_g": 3.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "3 slices pizza 4 carnes mediana",
+        "kcal": 712.5,
+        "proteina_g": 33.75,
+        "carbohidratos_g": 63.75,
+        "grasa_g": 36,
+        "azucares_g": 6,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 1882.5,
+      "proteina_g": 167.8,
+      "carbohidratos_g": 96.5,
+      "grasa_g": 88.2,
+      "azucares_g": 27.9
+    },
+    "actividad": {
+      "pasos": 4474,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 20,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 104.9
+        }
+      ],
+      "kcal_quemadas_total": 1859.6,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(129.7) + bici_neta(104.9, MET=5.1972 pooled)"
+    }
+  },
+  {
+    "fecha": "2026-09-11",
+    "items": [
+      {
+        "nombre": "1 trutro de pollo al horno con 1 papa y 3 huevos",
+        "kcal": 873,
+        "proteina_g": 78.2,
+        "carbohidratos_g": 44.5,
+        "grasa_g": 39.2,
+        "azucares_g": 5.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 churrasco italiano de filete de vacuno",
+        "kcal": 785,
+        "proteina_g": 47.6,
+        "carbohidratos_g": 47.3,
+        "grasa_g": 43.9,
+        "azucares_g": 7.0,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 empanada de queso frita",
+        "kcal": 380,
+        "proteina_g": 12,
+        "carbohidratos_g": 35,
+        "grasa_g": 20,
+        "azucares_g": 2,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 yogurt Protein Loncoleche",
+        "kcal": 91,
+        "proteina_g": 12,
+        "carbohidratos_g": 8.3,
+        "grasa_g": 0.6,
+        "azucares_g": 8.3,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2171,
+      "proteina_g": 159.8,
+      "carbohidratos_g": 135.6,
+      "grasa_g": 103.7,
+      "azucares_g": 23.3
+    },
+    "actividad": {
+      "pasos": 7128,
+      "detalle": [
+        {
+          "actividad": "Bicicleta (estática, moderada)",
+          "duracion_min": 30,
+          "intensidad": "moderada",
+          "kcal_quemadas_neto": 157.4
+        }
+      ],
+      "kcal_quemadas_total": 1989.1,
+      "nota": "KCALQ = BMR(1625) + pasos_neto(206.7) + bici_neta(157.4, MET=5.1972 pooled)"
+    }
   }
 ]
