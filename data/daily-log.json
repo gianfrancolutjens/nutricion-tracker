@@ -5038,5 +5038,185 @@
       "kcal_quemadas_total": 1989.1,
       "nota": "KCALQ = BMR(1625) + pasos_neto(206.7) + bici_neta(157.4, MET=5.1972 pooled)"
     }
+  },
+  {
+    "fecha": "2026-09-12",
+    "items": [
+      {
+        "nombre": "2 trutros de pollo con pan árabe, 2 rodajas de queso, 1/2 palta y mayonesa",
+        "kcal": 1331,
+        "proteina_g": 129.0,
+        "carbohidratos_g": 50.2,
+        "grasa_g": 66.0,
+        "azucares_g": 5.8,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "100g palomitas de maíz dulces",
+        "kcal": 500,
+        "proteina_g": 5,
+        "carbohidratos_g": 75,
+        "grasa_g": 20,
+        "azucares_g": 42,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2175,
+      "proteina_g": 192.0,
+      "carbohidratos_g": 145.3,
+      "grasa_g": 88.7,
+      "azucares_g": 65.9
+    },
+    "actividad": {
+      "pasos": 11039,
+      "detalle": [],
+      "kcal_quemadas_total": 1945.1,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(320.1) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-09-13",
+    "items": [
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "Carne al jugo con papas duquesa",
+        "kcal": 520,
+        "proteina_g": 40,
+        "carbohidratos_g": 30,
+        "grasa_g": 25,
+        "azucares_g": 4,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 trozo de torta de frambuesa",
+        "kcal": 349,
+        "proteina_g": 5,
+        "carbohidratos_g": 45,
+        "grasa_g": 16,
+        "azucares_g": 28,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "1 porción de helado",
+        "kcal": 207,
+        "proteina_g": 3.5,
+        "carbohidratos_g": 24,
+        "grasa_g": 11,
+        "azucares_g": 21,
+        "fuente": "estimado"
+      },
+      {
+        "nombre": "30g Natur (mix de frutos secos)",
+        "kcal": 170,
+        "proteina_g": 5,
+        "carbohidratos_g": 12,
+        "grasa_g": 12,
+        "azucares_g": 6,
+        "fuente": "estimado"
+      }
+    ],
+    "totales": {
+      "kcal": 1548,
+      "proteina_g": 101.5,
+      "carbohidratos_g": 130.6,
+      "grasa_g": 66.7,
+      "azucares_g": 76.6
+    },
+    "actividad": {
+      "pasos": 5781,
+      "detalle": [],
+      "kcal_quemadas_total": 1792.6,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(167.6) + ejercicio(0)"
+    }
+  },
+  {
+    "fecha": "2026-09-14",
+    "items": [
+      {
+        "nombre": "3 huevos con queso y jamón",
+        "kcal": 473,
+        "proteina_g": 33.9,
+        "carbohidratos_g": 2.5,
+        "grasa_g": 34.9,
+        "azucares_g": 2.2,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 tostada integral",
+        "kcal": 74,
+        "proteina_g": 3.65,
+        "carbohidratos_g": 13.5,
+        "grasa_g": 0.6,
+        "azucares_g": 1,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 trutros de pollo con 1 papa, 1/2 palta con mayonesa y 1 hallulla",
+        "kcal": 1405,
+        "proteina_g": 123.6,
+        "carbohidratos_g": 91.8,
+        "grasa_g": 58.0,
+        "azucares_g": 8.7,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "2 yogurt Protein Loncoleche + 1 scoop proteína",
+        "kcal": 302,
+        "proteina_g": 48,
+        "carbohidratos_g": 19.6,
+        "grasa_g": 2.7,
+        "azucares_g": 17.6,
+        "fuente": "food-database"
+      },
+      {
+        "nombre": "1 jalea proteica Watts",
+        "kcal": 42,
+        "proteina_g": 10,
+        "carbohidratos_g": 0.5,
+        "grasa_g": 0,
+        "azucares_g": 0.5,
+        "fuente": "food-database"
+      }
+    ],
+    "totales": {
+      "kcal": 2296,
+      "proteina_g": 219.2,
+      "carbohidratos_g": 127.9,
+      "grasa_g": 96.2,
+      "azucares_g": 30.0
+    },
+    "actividad": {
+      "pasos": 6300,
+      "detalle": [],
+      "kcal_quemadas_total": 1807.7,
+      "nota": "No fue al gym. KCALQ = BMR(1625) + pasos_neto(182.7) + ejercicio(0)"
+    }
   }
 ]
