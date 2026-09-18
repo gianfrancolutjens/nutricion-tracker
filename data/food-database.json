@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -340,6 +340,28 @@
       "carbohidratos_g": 21,
       "grasa_g": 7,
       "azucares_g": 1,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "slimbar_proteina_coco_1u",
+      "nombre": "Slimbar Proteína sabor Coco (1 unidad, 60g)",
+      "porcion": "1 unidad (60g)",
+      "kcal": 202,
+      "proteina_g": 20,
+      "carbohidratos_g": 4.1,
+      "grasa_g": 7.5,
+      "azucares_g": 0.5,
+      "origen": "busqueda_web"
+    },
+    {
+      "id": "cristal_cero_350ml",
+      "nombre": "Cerveza Cristal Cero (sin alcohol, 350ml)",
+      "porcion": "1 botella/lata (350ml)",
+      "kcal": 66,
+      "proteina_g": 0.3,
+      "carbohidratos_g": 15,
+      "grasa_g": 0,
+      "azucares_g": 3,
       "origen": "busqueda_web"
     }
   ]
