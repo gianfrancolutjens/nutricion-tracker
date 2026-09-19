@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "alimentos": [
     {
       "id": "scoop_proteina_gold_standard",
@@ -354,14 +354,14 @@
       "origen": "busqueda_web"
     },
     {
-      "id": "cristal_cero_350ml",
-      "nombre": "Cerveza Cristal Cero (sin alcohol, 350ml)",
+      "id": "ccu_lager_00_limon_350ml",
+      "nombre": "CCU Cerveza Lager 0,0° con jugo de limón (sin alcohol, 350cc)",
       "porcion": "1 botella/lata (350ml)",
-      "kcal": 66,
-      "proteina_g": 0.3,
-      "carbohidratos_g": 15,
-      "grasa_g": 0,
-      "azucares_g": 3,
+      "kcal": 94.5,
+      "proteina_g": 1.05,
+      "carbohidratos_g": 20.3,
+      "grasa_g": 0.35,
+      "azucares_g": 16.45,
       "origen": "busqueda_web"
     }
   ]
