@@ -5392,21 +5392,21 @@
         "fuente": "food-database"
       },
       {
-        "nombre": "1 cerveza Cristal Cero (sin alcohol)",
-        "kcal": 66,
-        "proteina_g": 0.3,
-        "carbohidratos_g": 15,
-        "grasa_g": 0,
-        "azucares_g": 3,
-        "fuente": "food-database"
+        "nombre": "1 lata CCU Cerveza Lager 0,0° con jugo de limón (sin alcohol, 350cc)",
+        "kcal": 94.5,
+        "proteina_g": 1.05,
+        "carbohidratos_g": 20.3,
+        "grasa_g": 0.35,
+        "azucares_g": 16.45,
+        "fuente": "busqueda_web"
       }
     ],
     "totales": {
-      "kcal": 1315,
-      "proteina_g": 137.8,
-      "carbohidratos_g": 76.7,
-      "grasa_g": 40.7,
-      "azucares_g": 25.0
+      "kcal": 1343.5,
+      "proteina_g": 138.6,
+      "carbohidratos_g": 82.0,
+      "grasa_g": 41.0,
+      "azucares_g": 38.5
     },
     "actividad": {
       "pasos": 6205,
