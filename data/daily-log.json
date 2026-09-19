@@ -5453,14 +5453,23 @@
         "grasa_g": 0,
         "azucares_g": 0.5,
         "fuente": "food-database"
+      },
+      {
+        "nombre": "100g palomitas de maíz sabor caramelo",
+        "kcal": 500,
+        "proteina_g": 5,
+        "carbohidratos_g": 75,
+        "grasa_g": 20,
+        "azucares_g": 42,
+        "fuente": "estimado"
       }
     ],
     "totales": {
-      "kcal": 1205.0,
-      "proteina_g": 136.3,
-      "carbohidratos_g": 59.2,
-      "grasa_g": 45.3,
-      "azucares_g": 23.3
+      "kcal": 1705.0,
+      "proteina_g": 141.3,
+      "carbohidratos_g": 134.2,
+      "grasa_g": 65.3,
+      "azucares_g": 65.3
     },
     "actividad": {
       "pasos": 7447,
